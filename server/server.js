@@ -212,6 +212,42 @@ var x = [ {
                                                                           imgUrls: ['https://i.etsystatic.com/13007480/r/il/735bf9/1577052982/il_fullxfull.1577052982_juey.jpg'
                                                                           ]
                                                                               } ,
+                                                                              {
+                                                                                productId: 69,
+                                                                                productName: 'tshirt',
+                                                                                productDescription: 'carpet in places everyone can see - why hide my amazing artistic clawing skills? brown cats with pink ears hunt anything that moves. My left donut is missing, as is my right why use post when this sofa is here but good morning sunshine.',
+                                                                                Price: 1.00,
+                                                                                Category_id: 4,
+                                                                                imgUrls: ['https://i.etsystatic.com/13007480/r/il/735bf9/1577052982/il_fullxfull.1577052982_juey.jpg'
+                                                                                ]
+                                                                                    } ,
+                                                                                    {
+                                                                                      productId: 70,
+                                                                                      productName: 'tshirt',
+                                                                                      productDescription: 'carpet in places everyone can see - why hide my amazing artistic clawing skills? brown cats with pink ears hunt anything that moves. My left donut is missing, as is my right why use post when this sofa is here but good morning sunshine.',
+                                                                                      Price: 1.00,
+                                                                                      Category_id: 4,
+                                                                                      imgUrls: ['https://images-na.ssl-images-amazon.com/images/I/61o0FyVAQ9L._AC_SL1186_.jpg'
+                                                                                      ]
+                                                                                          } ,
+                                                                                          {
+                                                                                            productId: 71,
+                                                                                            productName: 'tshirt',
+                                                                                            productDescription: 'carpet in places everyone can see - why hide my amazing artistic clawing skills? brown cats with pink ears hunt anything that moves. My left donut is missing, as is my right why use post when this sofa is here but good morning sunshine.',
+                                                                                            Price: 1.00,
+                                                                                            Category_id: 4,
+                                                                                            imgUrls: ['https://images-na.ssl-images-amazon.com/images/I/71NdwF2DOqL._AC_SL1500_.jpg'
+                                                                                            ]
+                                                                                                } ,
+                                                                                                {
+                                                                                                  productId: 72,
+                                                                                                  productName: 'tshirt',
+                                                                                                  productDescription: 'carpet in places everyone can see - why hide my amazing artistic clawing skills? brown cats with pink ears hunt anything that moves. My left donut is missing, as is my right why use post when this sofa is here but good morning sunshine.',
+                                                                                                  Price: 1.00,
+                                                                                                  Category_id: 4,
+                                                                                                  imgUrls: ['https://images-na.ssl-images-amazon.com/images/I/91WmISYk7EL._AC_SL1500_.jpg'
+                                                                                                  ]
+                                                                                                      } ,
                                                                         
                                                 
 
