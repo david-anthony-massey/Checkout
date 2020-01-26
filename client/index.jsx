@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
-import elementList from './components/elementList.jsx';
+import elementList from './src/components/elementList.jsx';
+import data from './dummy_data.js'
 
 
 class App extends React.Component{
@@ -113,3 +114,5 @@ return(
   </div>
 )
 }}
+
+React.DOM.render(<App />, document.getElementById('app'));

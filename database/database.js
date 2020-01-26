@@ -9,8 +9,8 @@ var mysql      = require('mysql');
 //Every method you invoke on a connection is queued and executed in sequence.
 var connection = mysql.createConnection({
   host     : 'localhost',
-  user     : 'me',
-  password : 'secret',
+  user     : 'student',
+  password : 'student',
   database : 'my_db'
 });
 
