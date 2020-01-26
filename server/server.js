@@ -55,6 +55,17 @@ app.listen(PORT, () => {
 //
 // testing things for the google docs sheets page! 
 //
+
+
+
+
+// DUMMY DATA FOR *** 
+//      CATAGORY 4
+// DUMMY DATA FOR *** 
+
+// checking to see if copy/paste worked
+
+/*
 var x = [ {
 	productId: 52,
 	productName: 'Le Bon Shoppe Envie Sweater',
@@ -62,7 +73,7 @@ var x = [ {
 	price: 110.00,
 	category_id: 4,
   imgUrls: [ 'https://static.wixstatic.com/media/63bd66_b7aa0acaa404441982eebecda429e3fd~mv2.png',
-  'https://static.wixstatic.com/media/63bd66_9d56e3915eba4e2db4726d7391d121f1~mv2.jpg' , 'https://static.wixstatic.com/media/63bd66_4fccf111980047d1b644e3ef406f1997~mv2_d_2048_1536_s_2.jp', 'https://static.wixstatic.com/media/63bd66_ead2f56317fd466ca46a383278767298~mv2_d_2048_1760_s_2.jpg', 'https://static.wixstatic.com/media/63bd66_0aa2e36d6da04c1b844d63a6afe3ff52~mv2.jpg'
+  'https://static.wixstatic.com/media/63bd66_9d56e3915eba4e2db4726d7391d121f1~mv2.jpg', 'https://static.wixstatic.com/media/63bd66_4fccf111980047d1b644e3ef406f1997~mv2_d_2048_1536_s_2.jp', 'https://static.wixstatic.com/media/63bd66_ead2f56317fd466ca46a383278767298~mv2_d_2048_1760_s_2.jpg', 'https://static.wixstatic.com/media/63bd66_0aa2e36d6da04c1b844d63a6afe3ff52~mv2.jpg'
 ]
 } ,
  {
@@ -211,45 +222,6 @@ var x = [ {
                                                                           Category_id: 4,
                                                                           imgUrls: ['https://i.etsystatic.com/13007480/r/il/735bf9/1577052982/il_fullxfull.1577052982_juey.jpg'
                                                                           ]
-                                                                              } ,
-                                                                              {
-                                                                                productId: 69,
-                                                                                productName: 'tshirt',
-                                                                                productDescription: 'carpet in places everyone can see - why hide my amazing artistic clawing skills? brown cats with pink ears hunt anything that moves. My left donut is missing, as is my right why use post when this sofa is here but good morning sunshine.',
-                                                                                Price: 1.00,
-                                                                                Category_id: 4,
-                                                                                imgUrls: ['https://i.etsystatic.com/13007480/r/il/735bf9/1577052982/il_fullxfull.1577052982_juey.jpg'
-                                                                                ]
-                                                                                    } ,
-                                                                                    {
-                                                                                      productId: 70,
-                                                                                      productName: 'tshirt',
-                                                                                      productDescription: 'carpet in places everyone can see - why hide my amazing artistic clawing skills? brown cats with pink ears hunt anything that moves. My left donut is missing, as is my right why use post when this sofa is here but good morning sunshine.',
-                                                                                      Price: 1.00,
-                                                                                      Category_id: 4,
-                                                                                      imgUrls: ['https://images-na.ssl-images-amazon.com/images/I/61o0FyVAQ9L._AC_SL1186_.jpg'
-                                                                                      ]
-                                                                                          } ,
-                                                                                          {
-                                                                                            productId: 71,
-                                                                                            productName: 'tshirt',
-                                                                                            productDescription: 'carpet in places everyone can see - why hide my amazing artistic clawing skills? brown cats with pink ears hunt anything that moves. My left donut is missing, as is my right why use post when this sofa is here but good morning sunshine.',
-                                                                                            Price: 1.00,
-                                                                                            Category_id: 4,
-                                                                                            imgUrls: ['https://images-na.ssl-images-amazon.com/images/I/71NdwF2DOqL._AC_SL1500_.jpg'
-                                                                                            ]
-                                                                                                } ,
-                                                                                                {
-                                                                                                  productId: 72,
-                                                                                                  productName: 'tshirt',
-                                                                                                  productDescription: 'carpet in places everyone can see - why hide my amazing artistic clawing skills? brown cats with pink ears hunt anything that moves. My left donut is missing, as is my right why use post when this sofa is here but good morning sunshine.',
-                                                                                                  Price: 1.00,
-                                                                                                  Category_id: 4,
-                                                                                                  imgUrls: ['https://images-na.ssl-images-amazon.com/images/I/91WmISYk7EL._AC_SL1500_.jpg'
-                                                                                                  ]
-                                                                                                      } ,
-                                                                        
-                                                
-
-        ]
-      
+                                                                              } ,    
+]
+*/
