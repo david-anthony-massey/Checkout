@@ -9,22 +9,14 @@ class App extends React.Component{
   constructor(props){
     super(props);
      this.state = {
-        date: '',
-        description: '',
-        amount: 0,
-        category_id: 0,
-        transactions: data
+        currentproduct: '',
+        productIdentifier: data
       }
 
       this.sendTransaction = this.sendTransaction.bind(this);
       this.deleteTransaction = this.deleteTransaction.bind(this);
-      this.handleDateChange = this.handleDateChange.bind(this);
-      this.handleDescriptionChange = this.handleDescriptionChange.bind(this);
-      this.handleAmountChange = this.handleAmountChange.bind(this);
-      this.handleCategoryID = this.handleCategoryID.bind(this);
-  }
+      this.handlecurrentproduct = this.handlecurrentproduct.bind(this);
 
-   // componentDidMount is a react lifescycle hook
    componentDidMount () {
     this.getTransaction()
 }
@@ -37,7 +29,6 @@ let id = event.target.value;
 }
 
 getTransaction () {
-//axios takes the place of a fetch() and makes the code simple/concise
 axios.get('/getData').then((response) => {
   this.setState({transactions: response.data});
 })
@@ -49,10 +40,7 @@ axios.get('/getData').then((response) => {
 sendTransaction () {
 
 let newTransaction = {
-  date: this.state.date,
-  amount: this.state.amount,
-  description: this.state.description,
-  category_id: this.state.category_id
+  currentproduct: this.state.currentproduct,
 }
 
 axios.post('/postTransaction', {
@@ -68,45 +56,19 @@ axios.post('/postTransaction', {
 })
 }
 
-handleDateChange(event) {
+handlecurrentproduct(event) {
 this.setState({
-  date: event.target.value
+  currentproduct: event.target.value
 })
 }
 
-handleDescriptionChange(event) {
-this.setState({
-  description: event.target.value
-})
-}
-
-handleAmountChange(event) {
-this.setState({
-  amount: event.target.value
-})
-}
-
-handleCategoryID(event) {
-this.setState({
-  category_id: event.target.value
-})
-}
-
-// render is a react lifescycle hook
 render () {
 return(
   <div>
-    <h1>mintegerApp</h1>
-      <h1>Date</h1>
-        <input value={this.state.date} onChange={this.handleDateChange}></input>
-      <h1>Description</h1>
-        <input value={this.state.description} onChange={this.handleDescriptionChange}></input>
-      <h1>Amount</h1>
-        <input value={this.state.amount} onChange={this.handleAmountChange}></input>
-      <h1>Category ID</h1>
-        <input value={this.state.category_id} onChange={this.handleCategoryID}></input>
-
-        <button onClick={this.sendTransaction}>Add Transaction</button>
+    <h1>CheckoutBox</h1>
+      <h1>Product</h1>
+        <input value={this.state.currentproduct} onChange={this.handlecurrentproduct}></input>
+        <button onClick={this.sendTransaction}>Add Product</button>
         {this.state.transactions.map((place, index) => {
           return ( <elementList key={index} id={place.id} place={place.transactions} deleteTransaction={this.deleteTransaction}/>)
         })
