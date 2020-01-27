@@ -12,3 +12,4 @@ CREATE TABLE boxey (
   imgUrls varchar(511),
   category_id int,
   PRIMARY KEY (ID)
+);

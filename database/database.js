@@ -11,19 +11,19 @@ var connection = mysql.createConnection({
   host     : 'localhost',
   user     : 'student',
   password : 'student',
-  database : 'my_db'
+  database : 'checkbox'
 });
 
-connection.connect();
+// connection.connect();
 
 connection.query('SELECT 1 + 1 AS solution', function (error, results, fields) {
     if (error) throw error;
     console.log('The solution is: ', results[0].solution);
 });
 
-connection.connect(); //this function call is necessary to establish the connection
+// connection.connect(); //this function call is necessary to establish the connection
 const getAllTransactions = callback => {
-  connection.query('SELECT * FROM transactions;', (err, data) => {
+  connection.query('SELECT * FROM boxey;', (err, data) => {
     // the semicolon inside the backticks is absolutely necessary for interacting with the mysql db
       if (err) {
         callback(err, null)
@@ -33,7 +33,7 @@ const getAllTransactions = callback => {
   }
 
 const createTransactions = (item, callback) => {
-  connection.query(`INSERT INTO transactions (date,amount,description,category_id) VALUES ('${item.date}','${item.amount}','${item.description}','${item.category_id}');`, (err,data) => {
+  connection.query(`INSERT INTO boxey (price, productName, productDescription, imgUrls, category_id) VALUES ('${item.price}','${item.productName}','${item.productDescription}','${item.imgUrls}','${item.category_id}');`, (err,data) => {
     // the semicolon inside the backticks is absolutely necessary for interacting with the mysql db
       if (err) {
         callback(err, null)

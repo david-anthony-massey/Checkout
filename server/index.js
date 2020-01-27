@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const db = require('../database-mysql');
+const db = require('.././database/database.js');
 const cors = require('cors');
 const axios = require('axios');
 
@@ -10,7 +10,7 @@ const PORT = 5000;
 app.use(cors()); // necessary for cross origin problems
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(express.static('client')
+app.use(express.static('client'));
 
 //setup basic routes
   // error first cb
