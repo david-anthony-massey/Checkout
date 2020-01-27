@@ -30,7 +30,7 @@ let id = event.target.value;
 }
 
 getTransaction () {
-axios.get('/getData').then((response) => {
+axios.get('/').then((response) => {
   this.setState({transactions: response.data});
 })
 .catch(function (error) {
@@ -44,11 +44,11 @@ let newTransaction = {
   currentproduct: this.state.currentproduct,
 }
 
-axios.post('/postTransaction', {
+axios.post('/post', {
   newTransaction: newTransaction
 })
 .then((response) => {
-  console.log("responed", response)
+  console.log("responded", response)
     this.setState({inputData:''});
     this.getTransaction();
 })

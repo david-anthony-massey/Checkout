@@ -14,7 +14,7 @@ app.use(express.static('client'));
 
 //setup basic routes
   // error first cb
-app.get('/getData', (req, res) => {
+app.get('/', (req, res) => {
   // console.log("In server, this is the request: ", req)
   db.getAllTransactions((err, results) => {
     if (err) {
@@ -27,7 +27,7 @@ app.get('/getData', (req, res) => {
 
 //setup basic routes
   // error first cb
-app.post('/postTransaction', (req,res) => {
+app.post('/post', (req,res) => {
   console.log("This is the request in server for POST: ", req.body)
   let transaction = req.body.newTransaction;
     db.createTransactions(transaction, (err,results) => {
