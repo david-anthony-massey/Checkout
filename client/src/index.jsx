@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
-import elementList from './src/components/elementList.jsx';
-import data from './dummy_data.js'
+import elementList from './components/elementList.jsx';
+import data from '../dummy_data.js'
 
 
 class App extends React.Component{
@@ -16,15 +16,16 @@ class App extends React.Component{
       this.sendTransaction = this.sendTransaction.bind(this);
       this.deleteTransaction = this.deleteTransaction.bind(this);
       this.handlecurrentproduct = this.handlecurrentproduct.bind(this);
-
+  }
    componentDidMount () {
     this.getTransaction()
-}
+  }
 
 deleteTransaction (event) {
 let id = event.target.value;
   axios.delete(`/deleteTransaction/${id}`)
-    .then(()=>{return this.getTransaction();
+    .then(()=>{
+      return this.getTransaction();
 });
 }
 
@@ -77,4 +78,4 @@ return(
 )
 }}
 
-React.DOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<App />, document.getElementById('app'));
