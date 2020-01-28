@@ -10,7 +10,9 @@ const PORT = 4321;
 app.use(cors()); // necessary for cross origin problems
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(express.static('client'));
+// app.use(express.static('/client/src'));
+app.use(express.static(__dirname + '/../client/dist'))
+// app.use(express.static(__dirname + '/../client/dist'));
 
 //setup basic routes
   // error first cb

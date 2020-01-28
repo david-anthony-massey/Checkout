@@ -70,8 +70,8 @@ return(
       <h1>Product</h1>
         <input value={this.state.currentproduct} onChange={this.handlecurrentproduct}></input>
         <button onClick={this.sendTransaction}>Add Product</button>
-        {this.state.transactions.map((place, index) => {
-          return ( <elementList key={index} id={place.id} place={place.transactions} deleteTransaction={this.deleteTransaction}/>)
+        {this.state.productIdentifier.map((place, index) => {
+          return ( <elementList key={index} id={place.id} place={place.productIdentifier} deleteTransaction={this.deleteTransaction}/>)
         })
         }
   </div>

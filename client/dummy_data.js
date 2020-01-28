@@ -1,4 +1,4 @@
-data = [
+const data = [
     {
         // JSON objects from spreadsheet go here and alter them according....
 
