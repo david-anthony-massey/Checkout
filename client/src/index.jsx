@@ -3,13 +3,19 @@ import ReactDOM from "react-dom";
 import axios from "axios";
 import elementList from "./components/elementList.jsx";
 import data from "../dummy_data.js";
-import productsJSON from "../../productsJSON.js";
+import CanadianAPISorryEh from "../../productsJSON.js";
+
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       currentproduct: "",
-      productIdentifier: data
+      // productJSON
+      // also may need an array for this part
+      productIdentifier: data,
+      productName: "",
+      price: "",
+      ALLPRODUCTS: CanadianAPISorryEh
     };
 
     this.sendTransaction = this.sendTransaction.bind(this);
@@ -18,7 +24,54 @@ class App extends React.Component {
   }
   componentDidMount() {
     // axios post request to server/database to insert all items from 'productJSON'
+    // var arr = [];
+    // var products = ALLPRODUCTS.productsJSON
+    // for (var i = 0; i < 103; i++) {
+    //   var products = ALLPRODUCTS.productsJSON[i];
+    //   arr.push(products);
+    // }
+    axios
+      .post("/postAllTransactions", {
+        data: CanadianAPISorryEh
+      })
+      .then(response => {
+        console.log(response);
+        // let newThing = {
+        //   currentproduct: this.state.currentproduct
+      })
+      .catch(function(error) {
+        console.log(error);
+      });
   }
+
+  //     )
+  //   }
+  // }
+
+  // attempt1
+  // async componentDidMount() {
+  //   // Load async data.
+  //   let userData = await API.get("/", {
+  //     params: {
+  //       results: 1,
+  //       inc: "productName,price"
+  //     }
+  //   });
+  //   userData = CanadianAPISorryEh.data.results[0];
+
+  //   // Update state with new data and re-render our component.
+  //   const avatar = CanadianAPISorryEh.productName;
+  //   const email = CanadianAPISorryEh.price;
+
+  //   this.setState({
+  //     ...this.state,
+  //     ...{
+  //       avatar,
+  //       email
+  //     }
+  //   });
+  // }
+  // attempt1
 
   deleteTransaction(event) {
     let id = event.target.value;

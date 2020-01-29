@@ -1,69 +1,68 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const db = require('.././database/database.js');
-const cors = require('cors');
-const axios = require('axios');
+const express = require("express");
+const bodyParser = require("body-parser");
+const db = require(".././database/database.js");
+const cors = require("cors");
+const axios = require("axios");
 
 const app = express();
 const PORT = 4321;
 
 app.use(cors()); // necessary for cross origin problems
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 // app.use(express.static('/client/src'));
-app.use(express.static(__dirname + '/../client/dist'))
+app.use(express.static(__dirname + "/../client/dist"));
 // app.use(express.static(__dirname + '/../client/dist'));
 
 //setup basic routes
-  // error first cb
-app.get('/', (req, res) => {
+// error first cb
+app.get("/allTransactions", (req, res) => {
   // console.log("In server, this is the request: ", req)
   db.getAllTransactions((err, results) => {
     if (err) {
-      console.log(err)//ideally would like to send the appropriate http status code as a response
+      console.log(err); //ideally would like to send the appropriate http status code as a response
     } else {
-      res.send(results)
+      res.send(results);
     }
-  })
-})
+  });
+});
 
 //setup basic routes
-  // error first cb
-app.post('/post', (req,res) => {
-  console.log("This is the request in server for POST: ", req.body)
-  let transaction = req.body.newTransaction;
-    db.createTransactions(transaction, (err,results) => {
+// error first cb
+app.post("/postAllTransactions", (req, res) => {
+  console.log("This is the request in server for POST: ", req.body.data);
+  let transactions = req.body.data;
+  for (var i = 0; i < transactions.length; i++) {
+    let transaction = transactions[i];
+    console.log(transaction);
+    db.createTransactions(transaction, err => {
       if (err) {
-        console.log(err) //ideally would like to send the appropriate http status code as a response
-      } else {
-        res.send(results)
+        console.log(err); //ideally would like to send the appropriate http status code as a response
       }
-    })
-})
+    });
+  }
+  res.send();
+});
 
 // Also we could create an errorHandling to console log err.res.data,err.res.status,and err.res.headers to better show errors
 
-app.delete('/deleteTransaction/:id', (req, res) => {
+app.delete("/deleteTransaction/:id", (req, res) => {
   //the ':/id' end point acts like a variable and allows the /deleteTransaction/:id route to be dynamic, id = 1,2,etc
   console.log("delete at id", req.params);
-    const id = req.params.id;
-})
+  const id = req.params.id;
+});
 
 app.listen(PORT, () => {
   console.log(`listening on port ${PORT}`);
 });
 
-
 //
-// testing things for the google docs sheets page! 
+// testing things for the google docs sheets page!
 //
 
-
-
-
-// DUMMY DATA FOR *** 
+// DUMMY DATA FOR ***
 //      CATAGORY 4
-// DUMMY DATA FOR *** 
+// DUMMY DATA FOR ***
 
 // checking to see if copy/paste worked
 
