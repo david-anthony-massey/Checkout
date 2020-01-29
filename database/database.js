@@ -36,7 +36,7 @@ const getAllTransactions = callback => {
 const createTransactions = (item, callback) => {
   console.log("this is the item", item);
   connection.query(
-    `INSERT INTO boxey (price, productName, productDescription, imgUrls, category_id) VALUES ('${item.price}','${item.productName}','${item.productDescription}','${item.imgUrls}','${item.category_id}');`,
+    `INSERT INTO boxey (price, productName, imgUrls, category_id) VALUES ('${item.price}','${item.productName}','${item.imgUrls}','${item.category_id}');`,
     (err, data) => {
       // the semicolon inside the backticks is absolutely necessary for interacting with the mysql db
       if (err) {

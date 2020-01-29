@@ -35,7 +35,7 @@ class App extends React.Component {
         data: CanadianAPISorryEh
       })
       .then(response => {
-        console.log(response);
+        console.log("THIS IS THE RESPONSE", response);
         // let newThing = {
         //   currentproduct: this.state.currentproduct
       })
