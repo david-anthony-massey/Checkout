@@ -1,73 +1,73 @@
 const CanadianAPISorryEh = [
   {
     productId: 1,
-    productName: "STX Ice Hockey Surgeon RX3 Hockey Stick",
+    productName: 'STX Ice Hockey Surgeon RX3 Hockey Stick',
     productDescription:
-      "HPR - with an ultra-high balance point and performance engineering the high performance ratio of the new stallion stick has been optimized for players seeking durability and performance all in one",
+      'HPR - with an ultra-high balance point and performance engineering the high performance ratio of the new stallion stick has been optimized for players seeking durability and performance all in one',
     price: 74.32,
     category_id: 1,
     imgUrls: [
-      "https://images-na.ssl-images-amazon.com/images/I/515Pu1JIHoL._SL1000_.jpg",
-      "https://images-na.ssl-images-amazon.com/images/I/51JOItEJ5zL._SL1000_.jpg"
+      'https://images-na.ssl-images-amazon.com/images/I/515Pu1JIHoL._SL1000_.jpg',
+      'https://images-na.ssl-images-amazon.com/images/I/51JOItEJ5zL._SL1000_.jpg'
     ]
   },
   {
     productId: 2,
-    productName: "Shock Doctor Pro Mouth Guard",
+    productName: 'Shock Doctor Pro Mouth Guard',
     productDescription:
-      "Our sports mouth guard is suitable for all contact sports where a mouth guard is required or recommended like: football, basketball, lacrosse, hockey, MMA, boxing, jiu jitsu and much more",
+      'Our sports mouth guard is suitable for all contact sports where a mouth guard is required or recommended like: football, basketball, lacrosse, hockey, MMA, boxing, jiu jitsu and much more',
     price: 5.69,
     category_id: 1,
     imgUrls: [
-      "https://images-na.ssl-images-amazon.com/images/I/710TCPdOn1L._SL1500_.jpg"
+      'https://images-na.ssl-images-amazon.com/images/I/710TCPdOn1L._SL1500_.jpg'
     ]
   },
   {
     productId: 3,
-    productName: "American Ice Force 2.0 Hockey Skate",
+    productName: 'American Ice Force 2.0 Hockey Skate',
     productDescription:
-      "Perfect skates for beginner skaters to intermediate skaters. Indoor and Outdoor skates, good for pond hockey. Light-weight sidewall injection mold giving the skate a custom fit right out of the box.",
+      'Perfect skates for beginner skaters to intermediate skaters. Indoor and Outdoor skates, good for pond hockey. Light-weight sidewall injection mold giving the skate a custom fit right out of the box.',
     price: 39.99,
     category_id: 1,
     imgUrls: [
-      "https://images-na.ssl-images-amazon.com/images/I/81LOj56WfRL._SL1500_.jpg",
-      "https://images-na.ssl-images-amazon.com/images/I/91BBhmahpKL._SL1500_.jpg",
-      "https://images-na.ssl-images-amazon.com/images/I/614WI3vaO%2BL._SL1500_.jpg",
-      "https://images-na.ssl-images-amazon.com/images/I/71Baf86rmVL._SL1500_.jpg"
+      'https://images-na.ssl-images-amazon.com/images/I/81LOj56WfRL._SL1500_.jpg',
+      'https://images-na.ssl-images-amazon.com/images/I/91BBhmahpKL._SL1500_.jpg',
+      'https://images-na.ssl-images-amazon.com/images/I/614WI3vaO%2BL._SL1500_.jpg',
+      'https://images-na.ssl-images-amazon.com/images/I/71Baf86rmVL._SL1500_.jpg'
     ]
   },
   {
     productId: 4,
-    productName: "Franklin Sports Youth Hockey Goalie Masks - GFM1500",
+    productName: 'Franklin Sports Youth Hockey Goalie Masks - GFM1500',
     productDescription:
-      "These youth goalie masks are designed specifically for street hockey. Quick-snap elastic straps are designed for an adjustable fit to keep the mask tight and comfortable for all goalies. Constructed from high-impact plastic with a welded steel cage, this mask is designed to be durable and safe",
+      'These youth goalie masks are designed specifically for street hockey. Quick-snap elastic straps are designed for an adjustable fit to keep the mask tight and comfortable for all goalies. Constructed from high-impact plastic with a welded steel cage, this mask is designed to be durable and safe',
     price: 45.99,
     category_id: 1,
     imgUrls: [
-      "https://images-na.ssl-images-amazon.com/images/I/81BgUHAnI9L._SL1500_.jpg"
+      'https://images-na.ssl-images-amazon.com/images/I/81BgUHAnI9L._SL1500_.jpg'
     ]
   },
   {
     productId: 5,
-    productName: "Faswin 12 Pack Classic Ice Hockey Puck",
+    productName: 'Faswin 12 Pack Classic Ice Hockey Puck',
     productDescription:
-      "Case of 12 Black Official Hockey Pucks with 2 Reusable Mesh Bag Regulation Size and Weight, Pond Hockey or On the Rink, VulcanizedRubber. Remarkable flatness, hardness and smooth surface quality for consistent, powerful and accurate shots and passes.",
+      'Case of 12 Black Official Hockey Pucks with 2 Reusable Mesh Bag Regulation Size and Weight, Pond Hockey or On the Rink, VulcanizedRubber. Remarkable flatness, hardness and smooth surface quality for consistent, powerful and accurate shots and passes.',
     price: 17.88,
     category_id: 1,
     imgUrls: [
-      "https://images-na.ssl-images-amazon.com/images/I/618XId%2BwOiL._SL1500_.jpg"
+      'https://images-na.ssl-images-amazon.com/images/I/618XId%2BwOiL._SL1500_.jpg'
     ]
   },
   {
     productId: 6,
     productName:
-      "STIGA NHL Stanley Cup Hockey Game, Tabletop Size, 96-cm x 50-cm x 10-cm",
+      'STIGA NHL Stanley Cup Hockey Game, Tabletop Size, 96-cm x 50-cm x 10-cm',
     productDescription:
-      "High-quality table hockey game with official NHL team colors and logos. Expertly crafted 3D players outfitted in Maple Leaf and Red Wing uniforms Easy-to-move control rods; behind-the-net plexi-shield protectors. Puck ejectors in each goal; goalies move from side to side",
+      'High-quality table hockey game with official NHL team colors and logos. Expertly crafted 3D players outfitted in Maple Leaf and Red Wing uniforms Easy-to-move control rods; behind-the-net plexi-shield protectors. Puck ejectors in each goal; goalies move from side to side',
     price: 139.59,
     category_id: 1,
     imgUrls: [
-      "https://images-na.ssl-images-amazon.com/images/I/41KMpDrcYGL.jpg"
+      'https://images-na.ssl-images-amazon.com/images/I/41KMpDrcYGL.jpg'
     ]
   },
   {
@@ -75,33 +75,33 @@ const CanadianAPISorryEh = [
     productName:
       'Franklin Sports Street Hockey Goal - Steel Street Hockey Net - All Weather Durable Outdoor Goal - 54',
     productDescription:
-      'HEAVY DUTY: This street hockey goal is built with 1" diameter steel tubing designed to last season after season. PRO STYLE: The goal is designed with pro-style top shelf and back support brace so you can let it rip just like the pros! DURABLE NETTING: This goal features ultra heavyweight netting so it can stand up to even the hardest slapshots',
+      'HEAVY DUTY: This street hockey goal is built with 1Ndiameter steel tubing designed to last season after season. PRO STYLE: The goal is designed with pro-style top shelf and back support brace so you can let it rip just like the pros! DURABLE NETTING: This goal features ultra heavyweight netting so it can stand up to even the hardest slapshots',
     price: 42.87,
     category_id: 1,
     imgUrls: [
-      "https://images-na.ssl-images-amazon.com/images/I/81aT8Fto2jL._SL1500_.jpg"
+      'https://images-na.ssl-images-amazon.com/images/I/81aT8Fto2jL._SL1500_.jpg'
     ]
   },
   {
     productId: 8,
-    productName: "PLAYMOBIL NHL Boston Bruins Goalie",
+    productName: 'PLAYMOBIL NHL Boston Bruins Goalie',
     productDescription:
-      "Be Boston Strong with the NHL Boston Bruins Goalie! Connect the figure to the goal in the NHL Hockey Arena for added fun! Figures can bend, sit, stand and turn their heads. Includes one goalie figure with Bruins jersey, hockey stick, player number decals, face mask, and other protective gear",
+      'Be Boston Strong with the NHL Boston Bruins Goalie! Connect the figure to the goal in the NHL Hockey Arena for added fun! Figures can bend, sit, stand and turn their heads. Includes one goalie figure with Bruins jersey, hockey stick, player number decals, face mask, and other protective gear',
     price: 13.99,
     category_id: 1,
     imgUrls: [
-      "https://images-na.ssl-images-amazon.com/images/I/41-Dk3DK%2BfL.jpg"
+      'https://images-na.ssl-images-amazon.com/images/I/41-Dk3DK%2BfL.jpg'
     ]
   },
   {
     productId: 9,
-    productName: "Stanley Cup",
+    productName: 'Stanley Cup',
     productDescription:
-      "The Stanley Cup is the championship trophy awarded annually to the National Hockey League (NHL) playoff winner. It is the oldest existing trophy to be awarded to a professional sports franchise in North America, and the International Ice Hockey Federation (IIHF) considers it to be one of the most important championships available to the sport.",
+      'The Stanley Cup is the championship trophy awarded annually to the National Hockey League (NHL) playoff winner. It is the oldest existing trophy to be awarded to a professional sports franchise in North America, and the International Ice Hockey Federation (IIHF) considers it to be one of the most important championships available to the sport.',
     price: 0.6,
     category_id: 1,
     imgUrls: [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Stanley_Cup%2C_2015.jpg/320px-Stanley_Cup%2C_2015.jpg"
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Stanley_Cup%2C_2015.jpg/320px-Stanley_Cup%2C_2015.jpg'
     ]
   },
   {
@@ -139,7 +139,7 @@ const CanadianAPISorryEh = [
     {
     productId: 14,
     productName: 'Franklin Sports Hockey Shooting Target - NHL - Fits 54 x 44 Inch Hockey Goal - Perfect For Hockey Shooting Practice - 5 Targets',
-    productDescription: '- FITS GOAL SIZE: 54" (w) x 44" (h). Goal not included - EASY SET UP: Adjustable self-stick straps for easy attachment to any 54" goal - WATERPROOF: Rugged 210D waterproof construction - USE WITH OFFICIAL STREET HOCKEY BALL: Designed for use with official 2 5/8" street hockey ball only - NHL APPROVED: Dynamic full-size goalie graphic image with 5 clearly defined shooting target holes- ',
+    productDescription: '- FITS GOAL SIZE: 54 (w) x 44 (h). Goal not included - EASY SET UP: Adjustable self-stick straps for easy attachment to any 54 goal - WATERPROOF: Rugged 210D waterproof construction - USE WITH OFFICIAL STREET HOCKEY BALL: Designed for use with official 2 5/8 street hockey ball only - NHL APPROVED: Dynamic full-size goalie graphic image with 5 clearly defined shooting target holes- ',
     price: 14.32,
     category_id: 1,
     imgUrls:[ 'https://images-na.ssl-images-amazon.com/images/I/81QWN3%2B0lTL._SL1500_.jpg']
@@ -172,7 +172,7 @@ const CanadianAPISorryEh = [
     {
     productId: 18,
     productName: 'Maple Leaf Syrup Nips, Set Of 4 Bottles',
-    productDescription: "Whether you're a native Canadian or simply a syrup fan, these leaf-shaped bottles will make you smile. They're adorable. Best of all, they are filled the world's best, most delicious maple syrup—from Canada of course. Our medium amber grade A maple syrup is certified the best Canada has to offer, and Canada has grading standards stricter than any other country. Called nips because of their diminutive size, these 1.7 oz. leaf-shaped bottles are perfect for party and wedding favors, gifts or travel...really, the list goes on and on. Grade A medium amber maple syrup: sweet, robust flavorCute (and collectible!) 1.7 oz. bottles shaped like maple leavesSet of 4 bottlesMade in the USA",
+    productDescription: 'Whether you re a native Canadian or simply a syrup fan, these leaf-shaped bottles will make you smile. They re adorable. Best of all, they are filled the worlds best, most delicious maple syrup—from Canada of course. Our medium amber grade A maple syrup is certified the best Canada has to offer, and Canada has grading standards stricter than any other country. Called nips because of their diminutive size, these 1.7 oz. leaf-shaped bottles are perfect for party and wedding favors, gifts or travel...really, the list goes on and on. Grade A medium amber maple syrup: sweet, robust flavorCute (and collectible!) 1.7 oz. bottles shaped like maple leavesSet of 4 bottlesMade in the USA',
     price: 19.80,
     category_id: 2,
     imgUrls: [ 'https://www.vermontcountrystore.com/ccstore/v1/images/?source=/file/v1915755195306600286/products/H4826.main.png&height=700&width=450&outputFormat=JPEG&quality=0.8']
@@ -196,7 +196,7 @@ const CanadianAPISorryEh = [
     {
     productId: 21,
     productName: 'Maple Syrup Hard Candy, 1 Pound Bag',
-    productDescription: "These amber translucent leaf candies are made with pure maple syrup and 'glow' when held up to the light. They're shaped like petite maple leaves and melt away slowly, leaving behind the sweet flavor of real maple syrup. Made with pure maple syrup Melt-in-your-mouth delicious. Maple hard candies in the shape of a maple leaf. Enjoy on their own or drop one on your favorite cup of tea for a comforting sweet treat. Each hard candy is individually wrapped 1 lb. bag",
+    productDescription: 'These amber translucent leaf candies are made with pure maple syrup and glow when held up to the light. Theyre shaped like petite maple leaves and melt away slowly, leaving behind the sweet flavor of real maple syrup. Made with pure maple syrup Melt-in-your-mouth delicious. Maple hard candies in the shape of a maple leaf. Enjoy on their own or drop one on your favorite cup of tea for a comforting sweet treat. Each hard candy is individually wrapped 1 lb. bag',
     price: 16.95,
     category_id: 2,
     imgUrls: [ 'https://www.vermontcountrystore.com/ccstore/v1/images/?source=/file/v1308369356246302349/products/33917.main.png&height=700&width=450&outputFormat=JPEG&quality=0.8']
@@ -204,7 +204,7 @@ const CanadianAPISorryEh = [
     {
     productId: 22,
     productName: 'Pure, Organic Canadian Maple Syrup, All-Natural, Grade-A Amber Rich Taste | Deli',
-    productDescription: "Naturally Delicious - This Grade-A Amber Rich Taste maple syrup is perfect for pancakes, waffles, desserts, drinks and all your favorite sweet treats with a smooth, natural flavor. Pure, Organic Quality - A family owned-and-operated brand, our Canadian organic maple syrup is free of additives, preservatives and artificial flavors. Vegan Friendly - Kosher and organic syrup is completely naturally and totally delicious, making it great for kids, adults and special dietary needs. Resealable Freshness Unlike most Canadian maple syrup brands, our glass bottles can be resealed tight to ensure a fresh, sweet taste every time it's opened. Canadian Made Quality - Every bottle of our organic pure maple syrup is crafted in Canada to ensure you get the best maple syrup available.",
+    productDescription: 'Naturally Delicious - This Grade-A Amber Rich Taste maple syrup is perfect for pancakes, waffles, desserts, drinks and all your favorite sweet treats with a smooth, natural flavor. Pure, Organic Quality - A family owned-and-operated brand, our Canadian organic maple syrup is free of additives, preservatives and artificial flavors. Vegan Friendly - Kosher and organic syrup is completely naturally and totally delicious, making it great for kids, adults and special dietary needs. Resealable Freshness Unlike most Canadian maple syrup brands, our glass bottles can be resealed tight to ensure a fresh, sweet taste every time its opened. Canadian Made Quality - Every bottle of our organic pure maple syrup is crafted in Canada to ensure you get the best maple syrup available.',
     price: 36.95,
     category_id: 2,
     imgUrls: [ 'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS_Jbeywxx9qUBhJobfq0hLUuoVatidGjPVkqVHzNQ2hqftm8oog7HS2QmRmQH4vvUA_KN1UHge0lo_7Bpoko0iicV_AbwloXL5wjkyzdmhWcKgCjoPrde1f7ms&usqp=CAY',  
@@ -215,8 +215,8 @@ const CanadianAPISorryEh = [
     } ,
     {
     productId: 23,
-    productName: "Runamok Maple Maple Syrup, Sugarmaker's Cut - 375 ml",
-    productDescription: "Sugarmaker's Cut - it is all in the name; the very best organic maple syrup of the season; it's special. The sugarmaker's cut maple syrup is the syrup that is set aside because the flavor is at the peak. So image your favorite maple syrup and then better. A Amber colored maple syrup with a truly divine and rich taste - Grade A. This is the syrup the Runamok Maple Team's flagship. Try it on your pancakes, but don't stop there, use it in many more of your recipes, like baking, soup, salad, meat etc",
+    productName: 'Runamok Maple Maple Syrup, Sugarmakers Cut - 375 ml',
+    productDescription: 'Sugarmakers Cut - it is all in the name; the very best organic maple syrup of the season; its special. The sugarmakers cut maple syrup is the syrup that is set aside because the flavor is at the peak. So image your favorite maple syrup and then better. A Amber colored maple syrup with a truly divine and rich taste - Grade A. This is the syrup the Runamok Maple Team flagship. Try it on your pancakes, but dont stop there, use it in many more of your recipes, like baking, soup, salad, meat etc',
     price: 17.50,
     category_id: 2,
     imgUrls: [ 'https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSY0YUdAAoOQMMw-eKBcLL-XmZq-eDr4C5K8vEQAgmXOH8jtlGP0LLIBGqtcA3luT8icAfzd1WkrZ7DGyShSstJuCw2V8mXqDWsg0EfuPlAWuA38zY3NQrwiw&usqp=CAY']
@@ -224,7 +224,7 @@ const CanadianAPISorryEh = [
     {
     productId: 24,
     productName: 'Award Winning Escuminac Canadian Maple Syrup - Gift Bundle - Easter Gift - Grade A - Extra Rare, Great Harvest and Late Harvest - Pure Organic Unblended Single Forest - 3 X 1.7 fl oz (50 ml)',
-    productDescription: "Discover our three exquisite gourmet grade A Canadian maple syrup flavours! This bundle is comprised of our #1 selling velvety Extra Rare, intensely dark and robust Late Harvest, our rich and refined amber Great Harvest Canadian maple syrups. 100% Pure Unblended Canadian maple syrup. 100% traceable from forest to plate (Single Forest). Michelin Guide's TOP RATED 3 STAR AWARD for 2015. Gluten free and vegan, 100% certified USDA Organic, Canada Organic NO additives, NO preservatives, NO artificial flavours. An absolute unforgettable taste! Brilliantly designed modern glass bottles (see images), these are NOT your typical beige maple syrup plastic jugs... A great gift idea for friends and family. Give the gift of maple syrup for birthdays, anniversaries, weddings, Valentine's day and Christmas. Grade a maple syrup from Quebec, Canada. Great as a pancake syrup, on desserts and in drinks.",
+    productDescription: 'Discover our three exquisite gourmet grade A Canadian maple syrup flavours!',
     price: 74.62,
     category_id: 2,
     imgUrls: [ 'https://images-na.ssl-images-amazon.com/images/I/41CmCsw9jRL.jpg',    
@@ -244,7 +244,7 @@ const CanadianAPISorryEh = [
     {
     productId: 26,
     productName: 'Digital Maple Syrup Grader',
-    productDescription: "Grade with confidence knowing your results are reported objectively according to industry standards with your Maple Syrup Digital Grader. With a digital read out, there is no more no guesswork on the grade of your maple syrup. Simple to use and our digital grader's compact design fits in your pocket. Easier to use and more accurate than a visual maple syrup grading kit. It only takes one button and a few seconds to grade your maple syrup. Great for maple syrup producers and packers.",
+    productDescription: 'It only takes one button and a few seconds to grade your maple syrup. Great for maple syrup producers and packers.',
     price: 59.00,
     category_id: 2,
     imgUrls: ['https://cdn11.bigcommerce.com/s-l8qlnhq2eh/products/5869/images/6514/hi759-_2___57285.1559321285.1280.1280.jpg?c=2']
@@ -297,7 +297,7 @@ const CanadianAPISorryEh = [
     {
     productId: 32,
     productName: 'BOURBON MAPLE SYRUP',
-    productDescription: "This miniature, wax-sealed bottle is the perfect size for tucking into your bag, so you're pancake-ready wherever you go. Mikuni gets used barrels from Tuthilltown Spirits in the Hudson Valley (New York's first whiskey distillery since Prohibition), and fill 'em up with medium amber grade maple syrup from heritage sugar shacks in Quebec. The syrup takes on layers of wood and smoke from the charred barrels, along with a hint of the bourbon that had been soaked up by the wood.",
+    productDescription: 'This miniature, The syrup takes on layers of wood and smoke from the charred barrels, along with a hint of the bourbon that had been soaked up by the wood.',
     price: 5.50,
     category_id: 2,
     imgUrls: [ 'https://cdn.shopify.com/s/files/1/0100/5392/products/NobleBourbonMapleSyrup900_900x600_crop_center@2x.progressive.jpg?v=1569894984']
@@ -319,6 +319,14 @@ const CanadianAPISorryEh = [
     category_id: 2,
     imgUrls: [ 'https://cdn11.bigcommerce.com/s-ec3t5d56yg/images/stencil/1280x1280/products/261/913/CrownMaple_VeryDarkGallon__71486.1544409029.jpg?c=2&imbypass=on&imbypass=on']
     } ,
+    {
+      productId: 35,
+      productName: 'THEguysFROMrush',
+      productDescription: 'Fairwell to Kings',
+      price: 999.00,
+      category_id: 3,
+      imgUrls: [ 'https://images-na.ssl-images-amazon.com/images/I/81UsU658UVL._SL1425_.jpg' , 'https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwi0kcTblpjnAhUCGKwKHfOfDMUQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.themorningbulletin.com.au%2Fnews%2Fyou-oughta-know-alanis-morissette-tour-australia%2F3207803%2F&psig=AOvVaw0SLBqEPvDqf0TftvOmuHID&ust=1579815773202256']
+      } ,
 
     {
     productId: 36,
@@ -461,18 +469,18 @@ const CanadianAPISorryEh = [
     productDescription: 'Shania Twain - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     price: 11.65,
     category_id: 3,
-    imgUrls: [ "https://www.discogs.com/release/429801-Shania-Twain/images"]
+    imgUrls: [ 'https://www.discogs.com/release/429801-Shania-Twain/images']
     } ,
 
     {
     productId: 52,
-    productName: "Le Bon Shoppe Envie Sweater",
+    productName: 'Le Bon Shoppe Envie Sweater',
     productDescription: 'Slightly oversized fit with above the hip hem. Soft and fluffy with no itch. 59% polyester, 29% acrylic, 9% wool, 3% spandex.',
     price: 110.00,
     category_id: 4,
-    imgUrls: [ "https://static.wixstatic.com/media/63bd66_b7aa0acaa404441982eebecda429e3fd~mv2.png" , 
-    "https://static.wixstatic.com/media/63bd66_9d56e3915eba4e2db4726d7391d121f1~mv2.jpg" , "https://static.wixstatic.com/media/63bd66_4fccf111980047d1b644e3ef406f1997~mv2_d_2048_1536_s_2.jp", 
-    "https://static.wixstatic.com/media/63bd66_ead2f56317fd466ca46a383278767298~mv2_d_2048_1760_s_2.jpg", "https://static.wixstatic.com/media/63bd66_0aa2e36d6da04c1b844d63a6afe3ff52~mv2.jpg"
+    imgUrls: [ 'https://static.wixstatic.com/media/63bd66_b7aa0acaa404441982eebecda429e3fd~mv2.png' , 
+    'https://static.wixstatic.com/media/63bd66_9d56e3915eba4e2db4726d7391d121f1~mv2.jpg' , 'https://static.wixstatic.com/media/63bd66_4fccf111980047d1b644e3ef406f1997~mv2_d_2048_1536_s_2.jp', 
+    'https://static.wixstatic.com/media/63bd66_ead2f56317fd466ca46a383278767298~mv2_d_2048_1760_s_2.jpg', 'https://static.wixstatic.com/media/63bd66_0aa2e36d6da04c1b844d63a6afe3ff52~mv2.jpg'
     ]
     } ,
     {
@@ -481,7 +489,7 @@ const CanadianAPISorryEh = [
     productDescription: 'carpet in places everyone can see - why hide my amazing artistic clawing skills? brown cats with pink ears hunt anything that moves. My left donut is missing, as is my right why use post when this sofa is here but good morning sunshine.',
     Price: 1.00,
     Category_id: 4,
-    imgUrls: ["https://www.canadianoutdoorequipment.com/images/P/cache/damn-yak-axe-holster-620x338.jpg"]
+    imgUrls: ['https://www.canadianoutdoorequipment.com/images/P/cache/damn-yak-axe-holster-620x338.jpg']
     } , 
     {
     productId: 54,
@@ -489,7 +497,7 @@ const CanadianAPISorryEh = [
     productDescription: 'carpet in places everyone can see - why hide my amazing artistic clawing skills? brown cats with pink ears hunt anything that moves. My left donut is missing, as is my right why use post when this sofa is here but good morning sunshine. ',
     price: 1.00,
     category_id: 4,
-    imgUrls: ["http://cwf-fcf.org/assets/images/CW-JulAug-Beaver.jpg"]
+    imgUrls: ['http://cwf-fcf.org/assets/images/CW-JulAug-Beaver.jpg']
     } ,
     {
     productId: 55,
@@ -497,7 +505,7 @@ const CanadianAPISorryEh = [
     productDescription: 'carpet in places everyone can see - why hide my amazing artistic clawing skills? brown cats with pink ears hunt anything that moves. My left donut is missing, as is my right why use post when this sofa is here but good morning sunshine.',
     Price: 1.00,
     Category_id: 4,
-    imgUrls: ["https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSUvt7NChnjoACHVD1zhiImfhLU-M9RzLbz8p1wXeXBmhqZg0Ja4o5_qp3MzC00p8UdhJQYS3UI&usqp=CAc"]
+    imgUrls: ['https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSUvt7NChnjoACHVD1zhiImfhLU-M9RzLbz8p1wXeXBmhqZg0Ja4o5_qp3MzC00p8UdhJQYS3UI&usqp=CAc']
     } ,
     {
     productId: 56,
@@ -505,7 +513,7 @@ const CanadianAPISorryEh = [
     productDescription: 'carpet in places everyone can see - why hide my amazing artistic clawing skills? brown cats with pink ears hunt anything that moves. My left donut is missing, as is my right why use post when this sofa is here but good morning sunshine.',
     Price: 1.00,
     Category_id: 4,
-    imgUrls: ["https://i.pinimg.com/originals/db/43/9a/db439a36b8442214aafef231153351e9.jpg"]
+    imgUrls: ['https://i.pinimg.com/originals/db/43/9a/db439a36b8442214aafef231153351e9.jpg']
     } ,
     {
     productId: 57,
@@ -513,7 +521,7 @@ const CanadianAPISorryEh = [
     productDescription: 'carpet in places everyone can see - why hide my amazing artistic clawing skills? brown cats with pink ears hunt anything that moves. My left donut is missing, as is my right why use post when this sofa is here but good morning sunshine.',
     Price: 1.00,
     Category_id: 4,
-    imgUrls: ["https://generalleathercraft.com/wp-content/uploads/2018/03/Custom-Canada-Belt.png"]
+    imgUrls: ['https://generalleathercraft.com/wp-content/uploads/2018/03/Custom-Canada-Belt.png']
     } ,
     {
     productId: 58,
@@ -521,7 +529,7 @@ const CanadianAPISorryEh = [
     productDescription: 'carpet in places everyone can see - why hide my amazing artistic clawing skills? brown cats with pink ears hunt anything that moves. My left donut is missing, as is my right why use post when this sofa is here but good morning sunshine.',
     Price: 1.00,
     Category_id: 4,
-    imgUrls: ["http://cdn.shopify.com/s/files/1/0892/1918/products/smores_grande.jpg"]
+    imgUrls: ['http://cdn.shopify.com/s/files/1/0892/1918/products/smores_grande.jpg']
     } ,
     {
     productId: 59,
@@ -529,7 +537,7 @@ const CanadianAPISorryEh = [
     productDescription: 'carpet in places everyone can see - why hide my amazing artistic clawing skills? brown cats with pink ears hunt anything that moves. My left donut is missing, as is my right why use post when this sofa is here but good morning sunshine.',
     Price: 1.00,
     Category_id: 4,
-    imgUrls: ["https://d1w8c6s6gmwlek.cloudfront.net/yournexttshirt.com/products/443/667/4436676.png"]
+    imgUrls: ['https://d1w8c6s6gmwlek.cloudfront.net/yournexttshirt.com/products/443/667/4436676.png']
     } ,
     {
     productId: 60,
@@ -537,7 +545,7 @@ const CanadianAPISorryEh = [
     productDescription: 'carpet in places everyone can see - why hide my amazing artistic clawing skills? brown cats with pink ears hunt anything that moves. My left donut is missing, as is my right why use post when this sofa is here but good morning sunshine.',
     Price: 1.00,
     Category_id: 4,
-    imgUrls: ["http://ocanadagear.com/graphics/tshirt-ilovecanada1.jpg" ]
+    imgUrls: ['http://ocanadagear.com/graphics/tshirt-ilovecanada1.jpg' ]
     } ,
     {
     productId: 61,
@@ -545,7 +553,7 @@ const CanadianAPISorryEh = [
     productDescription: 'carpet in places everyone can see - why hide my amazing artistic clawing skills? brown cats with pink ears hunt anything that moves. My left donut is missing, as is my right why use post when this sofa is here but good morning sunshine.',
     Price: 1.00,
     Category_id: 4,
-    imgUrls: ["https://i.ebayimg.com/images/g/1YAAAOSwVYhcBstw/s-l300.jpg"]
+    imgUrls: ['https://i.ebayimg.com/images/g/1YAAAOSwVYhcBstw/s-l300.jpg']
     } ,
     {
     productId: 62,
@@ -553,7 +561,7 @@ const CanadianAPISorryEh = [
     productDescription: 'carpet in places everyone can see - why hide my amazing artistic clawing skills? brown cats with pink ears hunt anything that moves. My left donut is missing, as is my right why use post when this sofa is here but good morning sunshine.',
     Price: 1.00,
     Category_id: 4,
-    imgUrls: ["https://i.etsystatic.com/5622545/r/il/090b63/1751002904/il_570xN.1751002904_djkv.jpg"]
+    imgUrls: ['https://i.etsystatic.com/5622545/r/il/090b63/1751002904/il_570xN.1751002904_djkv.jpg']
     } ,
     {
     productId: 63,
@@ -561,7 +569,7 @@ const CanadianAPISorryEh = [
     productDescription: 'carpet in places everyone can see - why hide my amazing artistic clawing skills? brown cats with pink ears hunt anything that moves. My left donut is missing, as is my right why use post when this sofa is here but good morning sunshine.',
     Price: 1.00,
     Category_id: 4,
-    imgUrls: ["https://i0.wp.com/shirts-n-giggles.com/wp-content/uploads/2017/10/mockup-6c103f07.jpg"]
+    imgUrls: ['https://i0.wp.com/shirts-n-giggles.com/wp-content/uploads/2017/10/mockup-6c103f07.jpg']
     } ,
     {
     productId: 64,
@@ -569,7 +577,7 @@ const CanadianAPISorryEh = [
     productDescription: 'carpet in places everyone can see - why hide my amazing artistic clawing skills? brown cats with pink ears hunt anything that moves. My left donut is missing, as is my right why use post when this sofa is here but good morning sunshine.',
     Price: 1.00,
     Category_id: 4,
-    imgUrls: ["https://image.shutterstock.com/image-vector/trust-me-m-canadian-tshirt-600w-1084051736.jpg"]
+    imgUrls: ['https://image.shutterstock.com/image-vector/trust-me-m-canadian-tshirt-600w-1084051736.jpg']
     } ,
     {
     productId: 65,
@@ -577,7 +585,7 @@ const CanadianAPISorryEh = [
     productDescription: 'carpet in places everyone can see - why hide my amazing artistic clawing skills? brown cats with pink ears hunt anything that moves. My left donut is missing, as is my right why use post when this sofa is here but good morning sunshine.',
     Price: 1.00,
     Category_id: 4,
-    imgUrls: ["https://di2ponv0v5otw.cloudfront.net/posts/2019/07/19/5d323eaf29f030572488b960/m_5d323ebaa20dfc782a589db2.jpg"]
+    imgUrls: ['https://di2ponv0v5otw.cloudfront.net/posts/2019/07/19/5d323eaf29f030572488b960/m_5d323ebaa20dfc782a589db2.jpg']
     } ,
     {
     productId: 66,
@@ -585,7 +593,7 @@ const CanadianAPISorryEh = [
     productDescription: 'carpet in places everyone can see - why hide my amazing artistic clawing skills? brown cats with pink ears hunt anything that moves. My left donut is missing, as is my right why use post when this sofa is here but good morning sunshine.',
     Price: 1.00,
     Category_id: 4,
-    imgUrls: ["https://i.etsystatic.com/20402614/c/1440/1144/0/646/il/a54104/1906641838/il_340x270.1906641838_g05d.jpg"]
+    imgUrls: ['https://i.etsystatic.com/20402614/c/1440/1144/0/646/il/a54104/1906641838/il_340x270.1906641838_g05d.jpg']
     } ,
     {
     productId: 67,
@@ -593,7 +601,7 @@ const CanadianAPISorryEh = [
     productDescription: 'carpet in places everyone can see - why hide my amazing artistic clawing skills? brown cats with pink ears hunt anything that moves. My left donut is missing, as is my right why use post when this sofa is here but good morning sunshine.',
     Price: 1.00,
     Category_id: 4,
-    imgUrls: ["https://ak1.ostkcdn.com/images/products/28157125/Mens-Sorry-Definition-Tshirt-Funny-Canada-Apology-Tee-73327532-f59b-4998-8460-0d526877acda_600.jpg"]
+    imgUrls: ['https://ak1.ostkcdn.com/images/products/28157125/Mens-Sorry-Definition-Tshirt-Funny-Canada-Apology-Tee-73327532-f59b-4998-8460-0d526877acda_600.jpg']
     } ,
     {
     productId: 68,
@@ -601,7 +609,7 @@ const CanadianAPISorryEh = [
     productDescription: 'carpet in places everyone can see - why hide my amazing artistic clawing skills? brown cats with pink ears hunt anything that moves. My left donut is missing, as is my right why use post when this sofa is here but good morning sunshine.',
     Price: 1.00,
     Category_id: 4,
-    imgUrls: ["https://i.etsystatic.com/13007480/r/il/735bf9/1577052982/il_fullxfull.1577052982_juey.jpg"]
+    imgUrls: ['https://i.etsystatic.com/13007480/r/il/735bf9/1577052982/il_fullxfull.1577052982_juey.jpg']
     } ,  
     {
     productId: 69,
@@ -613,7 +621,7 @@ const CanadianAPISorryEh = [
     } ,
     {
     productId: 70,
-    productName: "Hunter's Specialties Buc-grunter Deer Call",
+    productName: 'Hunters Specialties Buc-grunter Deer Call',
     productDescription: 'Easily produces tending, threatening and reassuring grunts to bring the bucks closer. Flexible ribbed tube channels sound in any direction, producing realistic, deep guttural grunts. Tone can also be changed by cupping hand over the end. Includes instructions and lanyard',
     price: 8.46,
     category_id: 5,
@@ -646,7 +654,7 @@ const CanadianAPISorryEh = [
     {
     productId: 74,
     productName: 'ATN X-Sight 5-18 Smart Riflescope w/1080p Video, Night Mode, WiFi, GPS, Image Stabilization, IOS and Android Apps',
-    productDescription: "Wi-Fi, GPS, Geotag, E-Compass, Velocity, Altitude, Record Video/Still images 1080P HD, Day/Night Use. Capable of recording and outputting an image 1080p full HD resolution at 30fps or 720p at 60fps. Unlike traditional optical systems our electronic zoom offers incredible flexibility in the field. Geotagging has never been easier and more seamless; Record and track everywhere you've been and see it on an interactive map. Built-in Wi-Fi allows a user to connect to mobile device or a desktop computer; Use your phone as a viewfinder, upgrade to the latest firmware.Kindly refer the user manual attached below for troubleshooting steps and instructions.",
+    productDescription: 'Wi-Fi, attached below for troubleshooting steps and instructions.',
     price: 135.00,
     category_id: 5,
     imgUrls: [ 'ATN X-Sight 5-18 Smart Riflescope w/1080p Video, Night Mode, WiFi, GPS, Image Stabilization, IOS and Android Apps']
@@ -693,7 +701,7 @@ const CanadianAPISorryEh = [
     } ,
     {
     productId: 80,
-    productName: "R RUNFUN Men's camo Waterproof Lightweight Hunting Boots",
+    productName: 'R RUNFUN Mens camo Waterproof Lightweight Hunting Boots',
     productDescription: 'Insulated: 400G 3M Thinsulate ultra insulation, along with 600D nylon upper provides extra toughness and warm hunting boot. Breathable & Durable: Anti-Tear 600D Nylon upper material and rubber outsole make the hunting boot resistant to abrasions, tears, and scuffs. Anti-Slip: Self-cleaning ribbed outsole wraps perimeter for maximum stability and performance in mud and snow，protective rubber exteriors resist punctures while providing ample flexibility. Lightweight and Comfortable: The Tidewe hunting boots apply a highly durable and light 600D nylon design instead of the commonly seen rubber shell. Tread comfortably and hunt confidently through the most aggressive terrain.',
     price: 99.99,
     category_id: 5,
@@ -702,7 +710,7 @@ const CanadianAPISorryEh = [
     {
     productId: 81,
     productName: 'Staghorn Mens All Over Camo Long-Sleeve Tee Shirt',
-    productDescription: "FINALLY...A CAMO TEE AT A VALUE. Most camo at this price point sticks to your skin, doesn't breathe like you need it, and then shrinks in the dryer. High-quality camo doesn't need to cost a fortune. Introducing: Staghorn Camo. STAY COMFORTABLE: The light stretch of the cotton and polyester blend will have you telling your friends how great your tee fits. Whether you are wearing this whitetail hunting, around the house, or to the store you can be sure you will get compliments. CREATED BY HUNTERS FOR HUNTERS: The tee was made to easily transition from the outdoors to every-day life. We wanted to provide you with a tee that isn't limited to one area of your life. Feel free to lounge or go hunt in the tee as you see fit. IT'S MORE THAN A CAMO PATTERN. It's who you are. Break-Up Country offers incredible effectiveness in all types of terrain where deer reside. DRAMATICALLY LARGER LIMBS, leaves, bark, and branches annihilate your outline at any distance, anywhere in the country.",
+    productDescription: 'FINALLY...A CAMO TEE AT A VALUE. Most camo at this price point sticks to your skin, doesnt breathe like you need it, and then shrinks in the dryer. High-quality camo doesnt need to cost a fortune. Introducing: Staghorn Camo. STAY COMFORTABLE: The light stretch of the cotton and polyester blend will have you telling your friends how great your tee fits. Whether you are wearing this whitetail hunting, around the house, or to the store you can be sure you will get compliments. CREATED BY HUNTERS FOR HUNTERS: The tee was made to easily transition from the outdoors to every-day life. We wanted to provide you with a tee that isnt limited to one area of your life. Feel free to lounge or go hunt in the tee as you see fit. ITS MORE THAN A CAMO PATTERN.  ye. Break-Up Country offers incredible effectiveness in all types of terrain where deer reside. DRAMATICALLY LARGER LIMBS, leaves, bark, and branches annihilate your outline at any distance, anywhere in the country.',
     price: 13.99,
     category_id: 5,
     imgUrls: [ 'https://images-na.ssl-images-amazon.com/images/I/81cN2G-oW6L._AC_UX679_.jpg']
@@ -710,7 +718,7 @@ const CanadianAPISorryEh = [
     {
     productId: 82,
     productName: 'Mossy Oak Cotton Mill 2.0 Camo Hunting Pants for Men Camouflage Clothes',
-    productDescription: "Men's camo cargo hunting pants made from soft, quiet, and durable. Features two-way stretch all over for extra comfort and mobility, and a crotch gusset for non-binding action fit when sitting, kneeling, or walking. Partial elastic waist for added comfort, button closure with zipper fly, hook and loop tape adjustable waist straps, belt loops, and drawstring ankle cuffs. 6 pockets total: two cargo, two back, & two front. Articulated stitched knees for easier squatting and kneeling. Standard 32” inseam for all sizes. Available in Mossy Oak Break-Up Country, Bottomland, Obsession, Mountain Country, Vintage Greenleaf, Original Bottomland, and Original Treestand.",
+    productDescription: 'Mens camo cargo hunting pants made from soft, quiet, and durable. Features two-way stretch all over for extra comfort and mobility, and a crotch gusset for non-binding action fit when sitting, kneeling, or walking. Partial elastic waist for added comfort, button closure with zipper fly, hook and loop tape adjustable waist straps, belt loops, and drawstring ankle cuffs. 6 pockets total: two cargo, two back, & two front. Articulated stitched knees for easier squatting and kneeling. Standard 32” inseam for all sizes. Available in Mossy Oak Break-Up Country, Bottomland, Obsession, Mountain Country, Vintage Greenleaf, Original Bottomland, and Original Treestand.',
     price: 39.99,
     category_id: 5,
     imgUrls: [ 'https://m.media-amazon.com/images/I/71FRh9H3ZfL._AC_UL320_ML3_.jpg']
@@ -741,143 +749,143 @@ const CanadianAPISorryEh = [
     } ,
     {
     productId: 86,
-    productName: "Maple Cream Cookies",
+    productName: 'Maple Cream Cookies',
     productDescription: '18 cookies per box with creamy, delicious maple syrup filling. This item contains two boxes of 18 cookies, total 36 cookies.',
     price: 14.95,
     category_id: 6,
-    imgUrls: ["https://images-na.ssl-images-amazon.com/images/I/91YOuHIL%2BaL._SL1500_.jpg"]
+    imgUrls: ['https://images-na.ssl-images-amazon.com/images/I/91YOuHIL%2BaL._SL1500_.jpg']
     } ,
     {
     productId: 87,
-    productName: "Bannock",
-    productDescription: "A boring variety of flat quick bread. Bannock is best not eaten unless absolutely necessary. Satisfaction not guaranteed. No refunds.",
+    productName: 'Bannock',
+    productDescription: 'A boring variety of flat quick bread. Bannock is best not eaten unless absolutely necessary. Satisfaction not guaranteed. No refunds.',
     price: 1.23,
     category_id: 6,
-    imgUrls: ["https://upload.wikimedia.org/wikipedia/commons/d/d2/BannockBeremeal.jpg"]
+    imgUrls: ['https://upload.wikimedia.org/wikipedia/commons/d/d2/BannockBeremeal.jpg']
     } ,
     {
     productId: 88,
-    productName: "Fresh Polar Bear Meat",
-    productDescription: "Sustainably raised on a natural diet of narwhals and walruses, this polar bear meat is both good for the environment and tasty. Minimal prep required, though even the pickier eaters will love the meat when lightly roasted over an open flame.",
+    productName: 'Fresh Polar Bear Meat',
+    productDescription: 'Sustainably raised on a natural diet of narwhals and walruses, this polar bear meat is both good for the environment and tasty. Minimal prep required, though even the pickier eaters will love the meat when lightly roasted over an open flame.',
     price: 314159.26,
     category_id: 6,
-    imgUrls: ["https://e3.365dm.com/17/03/768x432/a80f632b627bc3fbd85292a03a92c26cbb951dcb063af2a307b5f17b39614378_3904835.jpg?20170307125405"]
+    imgUrls: ['https://e3.365dm.com/17/03/768x432/a80f632b627bc3fbd85292a03a92c26cbb951dcb063af2a307b5f17b39614378_3904835.jpg?20170307125405']
     } ,
     {
     productId: 89,
-    productName: "Fiddleheads",
-    productDescription: "Freshly picked fiddlehead ferns from the wilds of Canada. Nutritious and delicious.",
+    productName: 'Fiddleheads',
+    productDescription: 'Freshly picked fiddlehead ferns from the wilds of Canada. Nutritious and delicious.',
     price: 14.23,
     category_id: 6,
-    imgUrls: ["https://i.etsystatic.com/17372702/r/il/f62edd/1508047481/il_794xN.1508047481_q4ta.jpg"]
+    imgUrls: ['https://i.etsystatic.com/17372702/r/il/f62edd/1508047481/il_794xN.1508047481_q4ta.jpg']
     } ,
     {
     productId: 90,
-    productName: "Tim Horton's Maple Donut",
-    productDescription: "A delicious maple donut shipped directly to you from the Canadian icon, Tim Hortons.",
+    productName: 'Tim Hortons Maple Donut',
+    productDescription: 'A delicious maple donut shipped directly to you from the Canadian icon, Tim Hortons.',
     price: 752.31,
     category_id: 6,
-    imgUrls: ["https://i0.wp.com/checkbeforeyoutrek.com/wp-content/uploads/2016/06/TH-Donut.jpg?w=1020&ssl=1"]
+    imgUrls: ['https://i0.wp.com/checkbeforeyoutrek.com/wp-content/uploads/2016/06/TH-Donut.jpg?w=1020&ssl=1']
     } ,
     {
     productId: 91,
-    productName: "Wild Smoked Salmon Jerky",
-    productDescription: "Salmon jerky is an unparalleled Canadian delicacy. This wild-smoked salmon can be enjoyed as a snack or as a meal substitute, especially for breakfast!",
+    productName: 'Wild Smoked Salmon Jerky',
+    productDescription: 'Salmon jerky is an unparalleled Canadian delicacy. This wild-smoked salmon can be enjoyed as a snack or as a meal substitute, especially for breakfast!',
     price: 37.42,
     category_id: 6,
-    imgUrls: ["https://shop.r10s.jp/auc-canadian/cabinet/food/10salmonjerkey.jpg"]
+    imgUrls: ['https://shop.r10s.jp/auc-canadian/cabinet/food/10salmonjerkey.jpg']
     } ,
 
     {
     productId: 92,
-    productName: "Inniskillin Ice Wine Cabernet Franc, 2014",
-    productDescription: "Niagra, Ontario, Canada- Amazing depth of colour and outstanding red berry flavours, particularly strawberry, lend this red Icewine to pair well with chocolate or chocolate mousse and red fruit based desserts or simply strawberries and cream!",
+    productName: 'Inniskillin Ice Wine Cabernet Franc, 2014',
+    productDescription: 'Niagra, Ontario, Canada- Amazing depth of colour and outstanding red berry flavours, particularly strawberry, lend this red Icewine to pair well with chocolate or chocolate mousse and red fruit based desserts or simply strawberries and cream!',
     price: 100.00,
     category_id: 6,
-    imgUrls: ["https://www.totalwine.com/dynamic/1000x/media/sys_master/twmmedia/h36/ha0/8818913247262.png"]
+    imgUrls: ['https://www.totalwine.com/dynamic/1000x/media/sys_master/twmmedia/h36/ha0/8818913247262.png']
     } ,
 
     {
     productId: 93,
-    productName: "Fresh Caribou Meat",
-    productDescription: "The freshest caribou meat possible! (Handle with care.)",
+    productName: 'Fresh Caribou Meat',
+    productDescription: 'The freshest caribou meat possible! (Handle with care.)',
     price: 3000.00,
     category_id: 6,
-    imgUrls: ["https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Caribou.jpg/1200px-Caribou.jpg’, ’https://www.vmcdn.ca/f/files/rmotoday/import/18/2018/08/GT-20110825-RMO0801-308259974-AR.jpeg;w=960’, ‘https://arc-anglerfish-arc2-prod-bonnier.s3.amazonaws.com/public/IHK5XIWGEW4DIKGJOLXMDDML2Q.jpg"]
+    imgUrls: ['https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Caribou.jpg/1200px-Caribou.jpg’, ’https://www.vmcdn.ca/f/files/rmotoday/import/18/2018/08/GT-20110825-RMO0801-308259974-AR.jpeg;w=960’, ‘https://arc-anglerfish-arc2-prod-bonnier.s3.amazonaws.com/public/IHK5XIWGEW4DIKGJOLXMDDML2Q.jpg']
     } ,
 
     {
     productId: 94,
-    productName: "Monreal-Style Smoked Meat",
-    productDescription: "Montreal-style smoked meat is a type of kosher-style deli meat product made by salting and curing beef brisket with spices. The brisket is allowed to absorb the flavours over a week, is then hot smoked to cook through, and finally is steamed to completion.",
+    productName: 'Monreal-Style Smoked Meat',
+    productDescription: 'Montreal-style smoked meat is a type of kosher-style deli meat product made by salting and curing beef brisket with spices. The brisket is allowed to absorb the flavours over a week, is then hot smoked to cook through, and finally is steamed to completion.',
     price: 18.23,
     category_id: 6,
-    imgUrls: ["https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Schwartz_smoked_meat_montreal.JPG/1280px-Schwartz_smoked_meat_montreal.JPG"]
+    imgUrls: ['https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Schwartz_smoked_meat_montreal.JPG/1280px-Schwartz_smoked_meat_montreal.JPG']
     } ,
 
     {
     productId: 95,
-    productName: "Montreal-Style Bagels",
-    productDescription: "Unlike their New York counter parts each bagel is boiled in honey water, and cooked in a wood fired oven that was designed to both cook and flavor the bagel. What comes out of  this process is a chewy, slightly sweet bagel that is incomparable to any other bagel around!",
+    productName: 'Montreal-Style Bagels',
+    productDescription: 'Unlike their New York counter parts each bagel is boiled in honey water, and cooked in a wood fired oven that was designed to both cook and flavor the bagel. What comes out of  this process is a chewy, slightly sweet bagel that is incomparable to any other bagel around!',
     price: 23.50,
     category_id: 6,
-    imgUrls: ["https://s31833.pcdn.co/wp-content/uploads/2017/06/woodgrainBagels-bagels-600x381.jpg"]
+    imgUrls: ['https://s31833.pcdn.co/wp-content/uploads/2017/06/woodgrainBagels-bagels-600x381.jpg']
     } ,
 
     {
     productId: 96,
-    productName: "Muktuk",
-    productDescription: "Muktuk is the traditional Inuit and Chukchi meal of frozen whale skin and blubber.",
+    productName: 'Muktuk',
+    productDescription: 'Muktuk is the traditional Inuit and Chukchi meal of frozen whale skin and blubber.',
     price: 327.84,
     category_id: 6,
-    imgUrls: ["https://alchetron.com/cdn/muktuk-cdca7f38-c0f7-4066-8fef-ad38e02c210.jpeg"]
+    imgUrls: ['https://alchetron.com/cdn/muktuk-cdca7f38-c0f7-4066-8fef-ad38e02c210.jpeg']
     } ,
 
     {
     productId: 97,
-    productName: "Tourtière",
-    productDescription: "Seasoned pork, beef, and veal in a pastry shell. Simply bake and serve.",
+    productName: 'Tourtière',
+    productDescription: 'Seasoned pork, beef, and veal in a pastry shell. Simply bake and serve.',
     price: 5.00,
     category_id: 6,
-    imgUrls: ["https://assets.shop.loblaws.ca/products_jpeg/20153080/en/20153080_lrg_1_@1x.jpg"]
+    imgUrls: ['https://assets.shop.loblaws.ca/products_jpeg/20153080/en/20153080_lrg_1_@1x.jpg']
     } ,
 
     {
     productId: 98,
-    productName: "Nanaimo Bars",
-    productDescription: "Nanaimo bars have a crumb base, custard filling, and chocolate topping. This layered Canadian dessert can be flavoured with mint or coconut and is best served on its own at room temperature.",
+    productName: 'Nanaimo Bars',
+    productDescription: 'Nanaimo bars have a crumb base, custard filling, and chocolate topping. This layered Canadian dessert can be flavoured with mint or coconut and is best served on its own at room temperature.',
     price: 7.00,
     category_id: 6,
-    imgUrls: ["https://i5.walmartimages.ca/images/Enlarge/508/574/6000198508574.jpg"]
+    imgUrls: ['https://i5.walmartimages.ca/images/Enlarge/508/574/6000198508574.jpg']
     } ,
     {
     productId: 99,
-    productName: "Butter Tarts",
-    productDescription: "Butter tarts are iconic Canadian desserts. Recipes vary across the country and everyone has an opinion on what makes the best butter tart. Typically they have a crisp pastry and a soft filling made of butter, sugar, syrup, and raisins or nuts. Butter tarts vary in size but can usually be enjoyed in one or two delicious bites.",
+    productName: 'Butter Tarts',
+    productDescription: 'Butter tarts are iconic Canadian desserts. Recipes vary across the country and everyone has an opinion on what makes the best butter tart. Typically they have a crisp pastry and a soft filling made of butter, sugar, syrup, and raisins or nuts. Butter tarts vary in size but can usually be enjoyed in one or two delicious bites.',
     price: 5.99,
     category_id: 6,
-    imgUrls: ["https://assets.shop.loblaws.ca/products_jpeg/21070344/en/21070344_lrg_1_@1x.jpg"]
+    imgUrls: ['https://assets.shop.loblaws.ca/products_jpeg/21070344/en/21070344_lrg_1_@1x.jpg']
     } ,
     {
     productId: 100,
-    productName: "Peameal Bacon",
+    productName: 'Peameal Bacon',
     productDescription: 'Back bacon is a traditional British style of round, lean bacon cut from the pork loin. Canadian bacon, or peameal bacon, is back bacon rolled in cornmeal.',
     price: 8.49,
     category_id: 6,
-    imgUrls: ["https://assets.shop.loblaws.ca/products_jpeg/20133609/en/20133609_lrg_1_@1x.jpg"]
+    imgUrls: ['https://assets.shop.loblaws.ca/products_jpeg/20133609/en/20133609_lrg_1_@1x.jpg']
     } ,
     {
     productId: 101,
-    productName: "Ketchup Flavour Chips",
-    productDescription: "One Large Bag Authentic, Delicious, and Fresh Ketchup Chips imported from Canada and delivered to your door! Quality and Freshness guaranteed. Expiration date clearly labelled and guaranteed to be shipped with valid expiry date or your money back. Bold, and full of rich flavor Crunchy Snack time delight",
+    productName: 'Ketchup Flavour Chips',
+    productDescription: 'One Large Bag Authentic, Delicious, and Fresh Ketchup Chips imported from Canada and delivered to your door! Quality and Freshness guaranteed. Expiration date clearly labelled and guaranteed to be shipped with valid expiry date or your money back. Bold, and full of rich flavor Crunchy Snack time delight',
     price: 10.97,
     category_id: 6,
-    imgUrls: ["https://images-na.ssl-images-amazon.com/images/I/516JRvnx2RL.jpg"]
+    imgUrls: ['https://images-na.ssl-images-amazon.com/images/I/516JRvnx2RL.jpg']
     } ,
     {
     productId: 102,
-    productName: "Poutine Gravy",
-    productDescription: "St Hubert Poutine Gravy mix is a delicious sauce which is used to make the famous Canadian dish Poutine.",
+    productName: 'Poutine Gravy',
+    productDescription: 'St Hubert Poutine Gravy mix is a delicious sauce which is used to make the famous Canadian dish Poutine.',
     price: 6.27,
     category_id: 6,
     imgUrls: ['https://images-na.ssl-images-amazon.com/images/I/41PKB0cxLyL.jpg']
