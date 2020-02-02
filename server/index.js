@@ -2,7 +2,6 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const db = require(".././database/database.js");
 const cors = require("cors");
-const axios = require("axios");
 
 const app = express();
 const PORT = 4137;
@@ -20,7 +19,7 @@ app.get("/allTransactions", (req, res) => {
   // console.log("In server, this is the request: ", req)
   db.getAllTransactions((err, results) => {
     if (err) {
-      console.log(err); //ideally would like to send the appropriate http status code as a response
+      console.log(err); 
     } else {
       res.send(results);
     }
@@ -37,14 +36,12 @@ app.post("/postAllTransactions", (req, res) => {
     console.log(transaction);
     db.createTransactions(transaction, err => {
       if (err) {
-        console.log(err); //ideally would like to send the appropriate http status code as a response
-      }
-    });
-  }
-  res.send();
-});
-
-// Also we could create an errorHandling to console log err.res.data,err.res.status,and err.res.headers to better show errors
+        console.log(err); 
+      }else{
+      res.send();
+    };
+  },req.body.data)
+}})
 
 app.delete("/deleteTransaction/:id", (req, res) => {
   //the ':/id' end point acts like a variable and allows the /deleteTransaction/:id route to be dynamic, id = 1,2,etc
