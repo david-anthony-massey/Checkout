@@ -6,7 +6,7 @@ USE checkbox;
 
 CREATE TABLE boxey (
   id int NOT NULL AUTO_INCREMENT,
-  price float NOT NULL,
+  price float(10,3) NOT NULL,
   productName varchar(255) NOT NULL,
   imgUrls text,
   category_id int,

@@ -1,7 +1,7 @@
 import React from 'react';
 
-const elementList = (props) => (
+const ElementList = (props) => (
 <div> hi</div>
 )
 
-export default elementList;
+export default ElementList;

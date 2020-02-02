@@ -13,8 +13,19 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + "/../client/dist"));
 // app.use(express.static(__dirname + '/../client/dist'));
 
-//setup basic routes
-// error first cb
+app.get("/", (req, res) => {
+  // console.log("In server, this is the request: ", req)
+  db.getAllTransactions((err, resulty) => {
+    if (err) {
+      console.log(err); 
+    } else {
+      res.send(resulty);
+    }
+  });
+});
+
+
+
 app.get("/allTransactions", (req, res) => {
   // console.log("In server, this is the request: ", req)
   db.getAllTransactions((err, results) => {
@@ -28,21 +39,31 @@ app.get("/allTransactions", (req, res) => {
 
 //setup basic routes
 // error first cb
-app.get("/postAllTransactions", (req, res) => {
-  console.log("This is the request in server for POSTXyz: ", req.body.data);
-  //req.body.data
-  let transactions = req.body.data;
-  for (var i = 0; i < transactions.length; i++) {
-    let transaction = transactions[i];
-    console.log("THIS IT THE LOOPING=",transaction);
-    db.createTransactions(transaction, err => {
-      if (err) {
-        console.log(err); 
-      }else{
-      res.send();
-    };
-  },req.body.data)
-}})
+// app.get("/postAllTransactions", (req, res) => {
+//   console.log("This is the request in server for POSTXyz: ", req.body.data);
+//   //req.body.data
+//   let transactions = req.body.data;
+//   for (var i = 0; i < transactions.length; i++) {
+//     let transaction = transactions[i];
+//     console.log("THIS IT THE LOOPING=",transaction);
+//     db.createTransactions(transaction, err => {
+//       if (err) {
+//         console.log(err); 
+//       }else{
+//       res.send();
+//     };
+//   },req.body.data)
+// }})
+
+app.post("/postAllTransactions", (req, res) => {
+  db.createTransactions(req.body, (err,result) => {
+    if (err) {console.log(err)
+    }else if(result){
+      console.log(result)};
+    res.send(result)
+    })
+  })
+
 
 app.delete("/deleteTransaction/:id", (req, res) => {
   //the ':/id' end point acts like a variable and allows the /deleteTransaction/:id route to be dynamic, id = 1,2,etc

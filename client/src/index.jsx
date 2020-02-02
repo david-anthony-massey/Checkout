@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import axios from "axios";
-import elementList from "./components/elementList.jsx";
+import ElementList from "./components/ElementList.jsx";
 import data from "../dummy_data.js";
 import CanadianAPISorryEh from "../../productsJSON.js";
 
@@ -15,7 +15,8 @@ class App extends React.Component {
       productIdentifier: data,
       productName: "",
       price: "",
-      ALLPRODUCTS: CanadianAPISorryEh
+      ALLPRODUCTS: data,
+      moreProducts: []
     };
 
     this.sendTransaction = this.sendTransaction.bind(this);
@@ -31,11 +32,13 @@ class App extends React.Component {
     //   arr.push(products);
     // }
     axios
-      .get("/postAllTransactions", {
+    // console.log("LETSSEEWTFTHISIS: ",{data:CanadianAPISorryEh})
+      .post("/postAllTransactions", {
         data: CanadianAPISorryEh
       })
-      .then(response => {
-        console.log("THIS IS THE RESPONSE", response);
+      .then(res => {
+        console.log("THIS IS THE RESPONSE", res);
+        this.setState({moreProducts: res.body.data})
         // let newThing = {
         //   currentproduct: this.state.currentproduct
       })
@@ -101,7 +104,7 @@ class App extends React.Component {
         newTransaction: newTransaction
       })
       .then(response => {
-        console.log("responded", response);
+        console.log("responded", response.data);
         this.setState({ inputData: "" });
         this.getTransaction();
       })
@@ -128,7 +131,7 @@ class App extends React.Component {
         <button onClick={this.sendTransaction}>Add Product</button>
         {this.state.productIdentifier.map((place, index) => {
           return (
-            <elementList
+            <ElementList
               key={index}
               id={place.id}
               place={place.productIdentifier}
