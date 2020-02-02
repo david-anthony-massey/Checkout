@@ -28,12 +28,13 @@ app.get("/allTransactions", (req, res) => {
 
 //setup basic routes
 // error first cb
-app.post("/postAllTransactions", (req, res) => {
-  console.log("This is the request in server for POST: ", req.body.data);
+app.get("/postAllTransactions", (req, res) => {
+  console.log("This is the request in server for POSTXyz: ", req.body.data);
+  //req.body.data
   let transactions = req.body.data;
   for (var i = 0; i < transactions.length; i++) {
     let transaction = transactions[i];
-    console.log(transaction);
+    console.log("THIS IT THE LOOPING=",transaction);
     db.createTransactions(transaction, err => {
       if (err) {
         console.log(err); 

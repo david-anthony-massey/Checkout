@@ -31,7 +31,7 @@ class App extends React.Component {
     //   arr.push(products);
     // }
     axios
-      .post("/postAllTransactions", {
+      .get("/postAllTransactions", {
         data: CanadianAPISorryEh
       })
       .then(response => {
