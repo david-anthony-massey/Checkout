@@ -137,12 +137,12 @@ componentDidMount() {
 
   getTransaction() {
     axios
-      .get("/")
+      .get("/product/:id")
       .then(response => {
-        this.setState({ transactions: response.data });
+        this.setState({ moreProducts: response.data.currentproduct });
       }) 
       .catch(function(error) {
-        console.log(error);
+        console.log("WHATyouTALKINGaboot");
       });
   }
 
@@ -175,11 +175,27 @@ componentDidMount() {
     return (
       <div>
         <h1>CheckoutBox</h1>
-        <h1>Product</h1>
-        
-        <button class="button">Upgrade and Save with Trade-in</button>
+        <div className="wrapper">
+        <div className="letter">
+        <button className="button">Upgrade and Save with Trade-in</button>
+        <div className="letter">
+        <div className="wrapper">
         <div className="checkoutbox">Add to Cart</div>
+        </div>
+        </div>
+        <div className="letter"><div className="wrapper">
         <div className="buynowbox">Buy Now</div>
+        </div>
+        </div><div className="wrapper">
+        <div className="letter">
+            <button
+            onClick={this.getTransaction}>PRICE</button>
+        </div>
+        <div className="letter">
+            <button>NAME</button>
+        </div>
+        </div>
+        </div>
         <input
           value={this.state.currentproduct}
           onChange={this.handlecurrentproduct}
@@ -187,9 +203,8 @@ componentDidMount() {
         
         <label className="container">Yes, I want fast, FREE 
 Delivery with Amazon Prime</label>
+</div>
         <input type="checkbox" checked="checked"></input>
-        <span className="checkmark"></span>
-        <h1>Shopping Cart</h1>
   <a href="{#cart.urls.continueShopping}" className="continue-shopping">Continue Shopping</a>
   <a href="{#cart.urls.checkout}" className="checkout-button">Checkout</a>
   <table cellSpacing="50" class="shopping-cart">  </table>

@@ -23,8 +23,16 @@ app.get("/", (req, res) => {
     }
   });
 });
-
-
+app.get("/product/:id", (req, res) => {
+  // console.log("In server, this is the request: ", req)
+  db.getProd(req.body.id, (err, resulty) => {
+    if (err) {
+      console.log("WILLISSSSSS"); 
+    } else {
+      res.send(resulty);
+    }
+  });
+});
 
 // app.get("/allTransactions", (req, res) => {
 //   // console.log("In server, this is the request: ", req)

@@ -263,3 +263,22 @@ along with update cart and total"
 .checkout-button {float: right; margin: 20px 0; font-weight: bold;}
 
 /* shopping cart end */
+
+/*grid stuff,*/
+.wrapper {
+  grid-template-columns: 3fr 1fr 1fr;
+ }
+ .letter {
+  background-color: #0069b3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 70px;
+  color: white;
+  line-height: 1;
+  font-family: 'hobeaux-rococeaux-background';
+  font-weight: 200;
+  cursor: pointer;
+  transition: all .3s ease;
+}

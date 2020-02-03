@@ -42,10 +42,10 @@ const createTransactions = (item, callback) => {
   );
 };
 
-const getProd = function(productName, callback) {
-  connection.query(`select imgUrl from imageurls where ProductId = '${productName}';`, (err, data) => {
+const getProd = function(id, callback) {
+  connection.query(`select from boxey productName where id = '${id}';`, (err, data) => {
     if (err) {
-      console.error('database  errorZZ');
+      console.log('database  errorZZ');
     } else {
       callback(null, data);
     }
