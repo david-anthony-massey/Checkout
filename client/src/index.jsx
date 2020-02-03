@@ -75,7 +75,10 @@ componentDidMount() {
     // });
     axios.get('/')
   .then(function (response) {
-    console.log(response);
+    this.setState({
+          insertAllProds: response.data.productIdentifier
+        });
+
   })
   .catch(function (error) {
     console.log(error);
@@ -124,19 +127,20 @@ componentDidMount() {
   // }
   // attempt1
 
-  deleteTransaction(event) {
-    let id = event.target.value;
-    axios.delete(`/deleteTransaction/${id}`).then(() => {
-      return this.getTransaction();
-    });
-  }
+  // //delete route?
+  // deleteTransaction(event) {
+  //   let id = event.target.value;
+  //   axios.delete(`/deleteTransaction/${id}`).then(() => {
+  //     return this.getTransaction();
+  //   });
+  // }
 
   getTransaction() {
     axios
       .get("/")
       .then(response => {
         this.setState({ transactions: response.data });
-      })
+      }) 
       .catch(function(error) {
         console.log(error);
       });
