@@ -2,8 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import axios from "axios";
 import ElementList from "./components/ElementList.jsx";
-import data from "../dummy_data.js";
-import CanadianAPISorryEh from "../../productsJSON.js";
+// import data from "../dummy_data.js";
+import data from "../../productsJSON.js";
 
 class App extends React.Component {
   constructor(props) {
@@ -16,36 +16,77 @@ class App extends React.Component {
       productName: "",
       price: "",
       ALLPRODUCTS: data,
-      moreProducts: []
+      moreProducts: [],
+      insertAllProds: [],
+      insertProd: ""
     };
 
     this.sendTransaction = this.sendTransaction.bind(this);
     this.deleteTransaction = this.deleteTransaction.bind(this);
     this.handlecurrentproduct = this.handlecurrentproduct.bind(this);
   }
-  componentDidMount() {
-    // axios post request to server/database to insert all items from 'productJSON'
-    // var arr = [];
-    // var products = ALLPRODUCTS.productsJSON
-    // for (var i = 0; i < 103; i++) {
-    //   var products = ALLPRODUCTS.productsJSON[i];
-    //   arr.push(products);
-    // }
+
+
+  // componentDidMount() {
+  //   // axios post request to server/database to insert all items from 'productJSON'
+  //   // var arr = [];
+  //   // var products = ALLPRODUCTS.productsJSON
+  //   // for (var i = 0; i < 103; i++) {
+  //   //   var products = ALLPRODUCTS.productsJSON[i];
+  //   //   arr.push(products);
+  //   // }
+  //   axios
+  //   // console.log("LETSSEEWTFTHISIS: ",{data:CanadianAPISorryEh})
+  //     .post("/postAllTransactions", {
+  //       data: CanadianAPISorryEh
+  //     })
+  //     .then(res => {
+  //       console.log("THIS IS THE RESPONSE", res);
+  //       this.setState({moreProducts: res.body.data})
+  //       // let newThing = {
+  //       //   currentproduct: this.state.currentproduct
+  //     })
+  //     .catch(function(error) {
+  //       console.log(error);
+  //     });
+  // }
+// trying it again for the millionith time
+
+componentDidMount() {
+  // axios
+  //   .get("http://localhost:3000/allTransactions", this.state.productName)
+  //   .then(response => {
+  //     this.setState({
+  //       moreProducts: response.data.productName
+  //     });
+  //   })
+  //   .catch(err => {
+  //     console.log("error")
+  //   });
+
     axios
-    // console.log("LETSSEEWTFTHISIS: ",{data:CanadianAPISorryEh})
-      .post("/postAllTransactions", {
-        data: CanadianAPISorryEh
-      })
-      .then(res => {
-        console.log("THIS IS THE RESPONSE", res);
-        this.setState({moreProducts: res.body.data})
-        // let newThing = {
-        //   currentproduct: this.state.currentproduct
-      })
-      .catch(function(error) {
-        console.log(error);
+    .get("http://localhost:4137/insertallTransactions", this.state.productIdentifier)
+    .then(response => {
+      this.setState({
+        insertAllProds: response.data.productIdentifier
       });
-  }
+    })
+    .catch(err => {
+      console.log("errorfrominsert")
+    });
+}
+
+// T
+// axios.get('http://localhost:3000/images', this.state.productId)
+//     .then((response) => {
+//       this.setState({
+//         currentPhoto: response.data.imgUrl
+//       })
+//     })
+//     .catch((err) => {console.error('no soup for you')});
+//   }
+
+
 
   //     )
   //   }

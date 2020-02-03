@@ -1,4 +1,4 @@
-const CanadianAPISorryEh = [
+const data = [
   {
     productId: 1,
     productName: 'STX Ice Hockey Surgeon RX3 Hockey Stick',
@@ -1057,4 +1057,4 @@ const CanadianAPISorryEh = [
     imgUrls: ['https://images-na.ssl-images-amazon.com/images/I/41PKB0cxLyL.jpg']
     } 
 ]
-export default CanadianAPISorryEh;
+export default data;

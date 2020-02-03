@@ -13,29 +13,52 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + "/../client/dist"));
 // app.use(express.static(__dirname + '/../client/dist'));
 
-app.get("/", (req, res) => {
-  // console.log("In server, this is the request: ", req)
-  db.getAllTransactions((err, resulty) => {
-    if (err) {
-      console.log(err); 
-    } else {
-      res.send(resulty);
-    }
+// app.get("/", (req, res) => {
+//   // console.log("In server, this is the request: ", req)
+//   db.getAllTransactions((err, resulty) => {
+//     if (err) {
+//       console.log(err); 
+//     } else {
+//       res.send(resulty);
+//     }
+//   });
+// });
+
+
+
+// app.get("/allTransactions", (req, res) => {
+//   // console.log("In server, this is the request: ", req)
+//   db.getProd(req.body.productName, (err,data) => {
+//     if (err) {
+//       console.log(err); 
+//     } else {
+//       res.send(data);
+//     }
+//   });
+// });
+
+app.get('/insertallTransactions', (req, res) => {
+  console.log("THISISreq",req)
+    db.createTransactions(req, (err, data) => {
+      if (err) console.error('server get error');
+      res.send(data);
+    })
   });
-});
-
-
-
-app.get("/allTransactions", (req, res) => {
-  // console.log("In server, this is the request: ", req)
-  db.getAllTransactions((err, results) => {
-    if (err) {
-      console.log(err); 
-    } else {
-      res.send(results);
-    }
-  });
-});
+  
+//T
+// app.get('/images', (req, res) => {
+//   db.getImage(req.body.productId, (err, data) => {
+//     if (err) console.error('server get error');
+//     res.send(data);
+//   })
+// });
+//
+// app.get("/categories", (req, res) => {
+//   db.getCategories((err, data) => {
+//     if (err) throw error;
+//     res.send(data);
+//   });
+// });
 
 //setup basic routes
 // error first cb
@@ -55,14 +78,15 @@ app.get("/allTransactions", (req, res) => {
 //   },req.body.data)
 // }})
 
-app.post("/postAllTransactions", (req, res) => {
-  db.createTransactions(req.body, (err,result) => {
-    if (err) {console.log(err)
-    }else if(result){
-      console.log(result)};
-    res.send(result)
-    })
-  })
+
+// app.get("/postAllTransactions", (req, res) => {
+//   db.createTransactions(req.body, (err,result) => {
+//     if (err) {console.log(err)
+//     }else if(result){
+//       console.log(result)};
+//     res.send(result)
+//     })
+//   })
 
 
 app.delete("/deleteTransaction/:id", (req, res) => {

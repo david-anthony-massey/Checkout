@@ -42,7 +42,18 @@ const createTransactions = (item, callback) => {
   );
 };
 
+const getProd = function(productName, callback) {
+  connection.query(`select imgUrl from imageurls where ProductId = '${productName}';`, (err, data) => {
+    if (err) {
+      console.error('database  errorZZ');
+    } else {
+      callback(null, data);
+    }
+  })
+};
+
 module.exports = {
   getAllTransactions,
-  createTransactions
+  createTransactions,
+  getProd
 };
