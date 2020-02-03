@@ -63,21 +63,28 @@ componentDidMount() {
   //   .catch(err => {
   //     console.log("error")
   //   });
-
-    axios
-    .get("http://localhost:4137/insertallTransactions", this.state.productIdentifier)
-    .then(response => {
-      this.setState({
-        insertAllProds: response.data.productIdentifier
-      });
-    })
-    .catch(err => {
-      console.log("errorfrominsert")
-    });
+    // axios
+    // .get("http://localhost:4137/", )
+    // .then(response => {
+    //   this.setState({
+    //     insertAllProds: response.data.productIdentifier
+    //   });
+    // })
+    // .catch(err => {
+    //   console.log("errorfrominsert")
+    // });
+    axios.get('/')
+  .then(function (response) {
+    console.log(response);
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
 }
 
+
 // T
-// axios.get('http://localhost:3000/images', this.state.productId)
+// axios.get('http://localhost:4137/images', this.state.productId)
 //     .then((response) => {
 //       this.setState({
 //         currentPhoto: response.data.imgUrl

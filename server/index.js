@@ -13,16 +13,16 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + "/../client/dist"));
 // app.use(express.static(__dirname + '/../client/dist'));
 
-// app.get("/", (req, res) => {
-//   // console.log("In server, this is the request: ", req)
-//   db.getAllTransactions((err, resulty) => {
-//     if (err) {
-//       console.log(err); 
-//     } else {
-//       res.send(resulty);
-//     }
-//   });
-// });
+app.get("/", (req, res) => {
+  // console.log("In server, this is the request: ", req)
+  db.getAllTransactions(req.body.data, (err, resulty) => {
+    if (err) {
+      console.log(err); 
+    } else {
+      res.send(resulty);
+    }
+  });
+});
 
 
 
@@ -44,7 +44,7 @@ app.get('/insertallTransactions', (req, res) => {
       res.send(data);
     })
   });
-  
+
 //T
 // app.get('/images', (req, res) => {
 //   db.getImage(req.body.productId, (err, data) => {
