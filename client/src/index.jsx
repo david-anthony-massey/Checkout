@@ -22,7 +22,7 @@ class App extends React.Component {
     };
 
     this.sendTransaction = this.sendTransaction.bind(this);
-    this.deleteTransaction = this.deleteTransaction.bind(this);
+    // this.deleteTransaction = this.deleteTransaction.bind(this);
     this.handlecurrentproduct = this.handlecurrentproduct.bind(this);
   }
 
