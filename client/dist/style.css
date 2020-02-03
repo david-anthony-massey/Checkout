@@ -140,3 +140,126 @@ button:hover {
   display: flex;
   flex-flow: column;
 }
+
+.checkoutbox {
+    background-color: orange;
+    width: 300px;
+    border: 10px black;
+    padding: 10px;
+    margin: 100px;
+    text-align: center;
+  }
+  .buynowbox {
+    background-color: #FF9900;
+    width: 300px;
+    border: 10px black;
+    padding: 10px;
+    margin: 100px;
+    text-align: center;
+  }
+  .button{
+  background-color: #f2f2f2;
+  border: black;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  }
+  /* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/*shopping cart stuff*/
+/* url stuff in here
+"continue shopping"
+"checkout"
+along with update cart and total"
+*/
+.shopping-cart {width: 100%; border-top: 1px solid #C3C3C3; border-right: 1px solid #C3C3C3; clear: both;}
+.shopping-cart th {background: #F0F0F0;}
+.shopping-cart th, .shopping-cart td {border-bottom: 1px solid #C3C3C3; border-left: 1px solid #C3C3C3; padding: 3px;}
+.shopping-cart .link {font-size: 90%; white-space: nowrap;}
+.shopping-cart .product {width: 55%}
+.shopping-cart .price {width: 5%;}
+.shopping-cart .quantity {width: 15%;}
+.shopping-cart .quantity input {width: 30px;}
+.shopping-cart .price {width: 20%;}
+.shopping-cart .product-img {border: 1px solid #ccc; background-color: #e9e9e9; padding: 3px; width: 80px; height: 80px; float: left;}
+.shopping-cart .product-img img {max-width:80px;max-height:80px;width:auto;height:auto;}
+.shopping-cart .product-name {margin-left: 100px;}
+.shopping-cart tr.totals {font-weight: bold;}
+.shopping-cart tr.totals a {font-weight: normal;}
+.shopping-cart .quantity-span {text-align: right;}
+.coupon {margin:20px 0 0;text-align:right;}
+.continue-shopping {float:left;margin:20px 0;}
+.checkout-button {float: right; margin: 20px 0; font-weight: bold;}
+
+/* shopping cart end */

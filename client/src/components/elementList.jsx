@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ElementList = (props) => (
-<div> hi</div>
+<div>In stock</div>
 )
 
 export default ElementList;

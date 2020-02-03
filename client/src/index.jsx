@@ -176,10 +176,26 @@ componentDidMount() {
       <div>
         <h1>CheckoutBox</h1>
         <h1>Product</h1>
+        
+        <button class="button">Upgrade and Save with Trade-in</button>
+        <div className="checkoutbox">Add to Cart</div>
+        <div className="buynowbox">Buy Now</div>
         <input
           value={this.state.currentproduct}
           onChange={this.handlecurrentproduct}
         ></input>
+        
+        <label className="container">Yes, I want fast, FREE 
+Delivery with Amazon Prime</label>
+        <input type="checkbox" checked="checked"></input>
+        <span className="checkmark"></span>
+        <h1>Shopping Cart</h1>
+  <a href="{#cart.urls.continueShopping}" className="continue-shopping">Continue Shopping</a>
+  <a href="{#cart.urls.checkout}" className="checkout-button">Checkout</a>
+  <table cellSpacing="50" class="shopping-cart">  </table>
+        <td colspan="2"><input type="submit" name="submit" value="Update cart" /></td>
+        <td className="quantity-span" colspan="2">Total</td>
+    
         <button onClick={this.sendTransaction}>Add Product</button>
         {this.state.productIdentifier.map((place, index) => {
           return (
