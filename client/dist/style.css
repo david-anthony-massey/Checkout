@@ -332,3 +332,10 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+.price_inside_buybox
+{
+  text-decoration-color: crimson
+}
+        
+    

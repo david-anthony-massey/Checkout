@@ -43,10 +43,14 @@ const createTransactions = (item, callback) => {
 };
 
 const getProd = function(id, callback) {
-  connection.query(`select from boxey productName where id = '${id}';`, (err, data) => {
+  console.log("HEY THIS IS IT",id)
+  connection.query(`select price from boxey where id = '${id}';`, (err, data) => {
+
     if (err) {
-      console.log('database  errorZZ');
+      console.log('database  errorZZ',err);
     } else {
+      console.log("heyyyyyyyyy" ,data) 
+
       callback(null, data);
     }
   })

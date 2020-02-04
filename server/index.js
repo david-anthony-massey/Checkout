@@ -24,17 +24,48 @@ app.get("/", (req, res) => {
   });
 });
 app.get("/product/:id", (req, res) => {
-  // console.log("In server, this is the request: ", req)
-  db.getProd(req.body.id, (err, resulty) => {
-    if (err) {
-      console.log("WILLISSSSSS"); 
-    } else {
-      res.send(resulty);
-    }
+  console.log("In server, this is the request: ", req.params.id);
+    db.getProd(req.params.id, (err, resulty) => {
+      if (err) {
+        console.log("WILLISSSSSS",err); 
+      } else {
+        res.send(resulty);
+      }
+    });
   });
-});
+  
+  app.get('/insertallTransactions', (req, res) => {
+    console.log("THISISreq",req)
+      db.createTransactions(req, (err, data) => {
+        if (err) console.error('server get error');
+        res.send(data);
+      })
+    });
+    
+    
+    app.delete("/deleteTransaction/:id", (req, res) => {
+      //the ':/id' end point acts like a variable and allows the /deleteTransaction/:id route to be dynamic, id = 1,2,etc
+      console.log("delete at id", req.params);
+      const id = req.params.id;
+    });
+    
+    app.listen(PORT, () => {
+      console.log(`listening on port ${PORT}`);
+    });
+  
+  //ZZZZZZZZZZZZZSomething like that for final?
+  //     const { id } = req.params;
+  //     db.getProd(req.params.id, (err, {id}) => {
+  //     if(err){
+  //       console.log("WILLISSSSSS",err); 
+  //     }else{
+  //     res.send({ id });
+  //     }
+  //   })
+  // })
+  //ENDZZZZZZZZZZZZZSomething like that for final?END
 
-// app.get("/allTransactions", (req, res) => {
+  // app.get("/allTransactions", (req, res) => {
 //   // console.log("In server, this is the request: ", req)
 //   db.getProd(req.body.productName, (err,data) => {
 //     if (err) {
@@ -44,101 +75,67 @@ app.get("/product/:id", (req, res) => {
 //     }
 //   });
 // });
-
-app.get('/insertallTransactions', (req, res) => {
-  console.log("THISISreq",req)
-    db.createTransactions(req, (err, data) => {
-      if (err) console.error('server get error');
-      res.send(data);
-    })
-  });
-
-//T
-// app.get('/images', (req, res) => {
-//   db.getImage(req.body.productId, (err, data) => {
-//     if (err) console.error('server get error');
-//     res.send(data);
-//   })
-// });
-//
-// app.get("/categories", (req, res) => {
-//   db.getCategories((err, data) => {
-//     if (err) throw error;
-//     res.send(data);
-//   });
-// });
-
-//setup basic routes
-// error first cb
-// app.get("/postAllTransactions", (req, res) => {
-//   console.log("This is the request in server for POSTXyz: ", req.body.data);
-//   //req.body.data
-//   let transactions = req.body.data;
-//   for (var i = 0; i < transactions.length; i++) {
-//     let transaction = transactions[i];
-//     console.log("THIS IT THE LOOPING=",transaction);
-//     db.createTransactions(transaction, err => {
-//       if (err) {
-//         console.log(err); 
-//       }else{
-//       res.send();
-//     };
-//   },req.body.data)
-// }})
-
-
-// app.get("/postAllTransactions", (req, res) => {
-//   db.createTransactions(req.body, (err,result) => {
-//     if (err) {console.log(err)
-//     }else if(result){
-//       console.log(result)};
-//     res.send(result)
-//     })
-//   })
-
-
-app.delete("/deleteTransaction/:id", (req, res) => {
-  //the ':/id' end point acts like a variable and allows the /deleteTransaction/:id route to be dynamic, id = 1,2,etc
-  console.log("delete at id", req.params);
-  const id = req.params.id;
-});
-
-app.listen(PORT, () => {
-  console.log(`listening on port ${PORT}`);
-});
-
-//
-// testing things for the google docs sheets page!
-//
-
-// DUMMY DATA FOR ***
-//      CATAGORY 4
-// DUMMY DATA FOR ***
-
-// checking to see if copy/paste worked
-
-/*
-var x = [ {
-	productId: 52,
-	productName: 'Le Bon Shoppe Envie Sweater',
-	productDescription: 'Slightly oversized fit with above the hip hem. Soft and fluffy with no itch. 59% polyester, 29% acrylic, 9% wool, 3% spandex.',
-	price: 110.00,
-	category_id: 4,
-  imgUrls: [ 'https://static.wixstatic.com/media/63bd66_b7aa0acaa404441982eebecda429e3fd~mv2.png',
-  'https://static.wixstatic.com/media/63bd66_9d56e3915eba4e2db4726d7391d121f1~mv2.jpg', 'https://static.wixstatic.com/media/63bd66_4fccf111980047d1b644e3ef406f1997~mv2_d_2048_1536_s_2.jp', 'https://static.wixstatic.com/media/63bd66_ead2f56317fd466ca46a383278767298~mv2_d_2048_1760_s_2.jpg', 'https://static.wixstatic.com/media/63bd66_0aa2e36d6da04c1b844d63a6afe3ff52~mv2.jpg'
-]
+  
+  //setup basic routes
+  // error first cb
+  // app.get("/postAllTransactions", (req, res) => {
+  //   console.log("This is the request in server for POSTXyz: ", req.body.data);
+  //   //req.body.data
+  //   let transactions = req.body.data;
+  //   for (var i = 0; i < transactions.length; i++) {
+  //     let transaction = transactions[i];
+  //     console.log("THIS IT THE LOOPING=",transaction);
+  //     db.createTransactions(transaction, err => {
+  //       if (err) {
+  //         console.log(err); 
+  //       }else{
+  //       res.send();
+  //     };
+  //   },req.body.data)
+  // }})
+  
+  
+  // app.get("/postAllTransactions", (req, res) => {
+  //   db.createTransactions(req.body, (err,result) => {
+  //     if (err) {console.log(err)
+  //     }else if(result){
+  //       console.log(result)};
+  //     res.send(result)
+  //     })
+  //   })
+  
+  //
+  // testing things for the google docs sheets page!
+  //
+  
+  // DUMMY DATA FOR ***
+  //      CATAGORY 4
+  // DUMMY DATA FOR ***
+  
+  // checking to see if copy/paste worked
+  
+  /*
+  var x = [ {
+    productId: 52,
+    productName: 'Le Bon Shoppe Envie Sweater',
+    productDescription: 'Slightly oversized fit with above the hip hem. Soft and fluffy with no itch. 59% polyester, 29% acrylic, 9% wool, 3% spandex.',
+    price: 110.00,
+    category_id: 4,
+    imgUrls: [ 'https://static.wixstatic.com/media/63bd66_b7aa0acaa404441982eebecda429e3fd~mv2.png',
+    'https://static.wixstatic.com/media/63bd66_9d56e3915eba4e2db4726d7391d121f1~mv2.jpg', 'https://static.wixstatic.com/media/63bd66_4fccf111980047d1b644e3ef406f1997~mv2_d_2048_1536_s_2.jp', 'https://static.wixstatic.com/media/63bd66_ead2f56317fd466ca46a383278767298~mv2_d_2048_1760_s_2.jpg', 'https://static.wixstatic.com/media/63bd66_0aa2e36d6da04c1b844d63a6afe3ff52~mv2.jpg'
+  ]
 } ,
- {
-      productId: 53,
-      productName: 'axe holster',
-      productDescription: 'carpet in places everyone can see - why hide my amazing artistic clawing skills? brown cats with pink ears hunt anything that moves. My left donut is missing, as is my right why use post when this sofa is here but good morning sunshine.',
-      Price: 1.00,
-      Category_id: 4,
-      imgUrls: ['https://www.canadianoutdoorequipment.com/images/P/cache/damn-yak-axe-holster-620x338.jpg'
-      ]
-          } , 
-          {
-
+{
+  productId: 53,
+  productName: 'axe holster',
+  productDescription: 'carpet in places everyone can see - why hide my amazing artistic clawing skills? brown cats with pink ears hunt anything that moves. My left donut is missing, as is my right why use post when this sofa is here but good morning sunshine.',
+  Price: 1.00,
+  Category_id: 4,
+  imgUrls: ['https://www.canadianoutdoorequipment.com/images/P/cache/damn-yak-axe-holster-620x338.jpg'
+]
+} , 
+{
+  
   productId: 54,
 	productName: 'beaver',
 	productDescription: 'carpet in places everyone can see - why hide my amazing artistic clawing skills? brown cats with pink ears hunt anything that moves. My left donut is missing, as is my right why use post when this sofa is here but good morning sunshine. ',
