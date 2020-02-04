@@ -196,6 +196,27 @@ componentDidMount() {
         </div>
         </div>
         </div>
+        <ul>
+        <li class="dropdown"><a class="dropbtn">Qty</a>
+<div class="dropdown-content">
+      <a href="#"><www className="amazon com"></www></a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="#">6</a>
+      <a href="#">7</a>
+      <a href="#">8</a>
+      <a href="#">9</a>
+      <a href="#">10</a>
+      <a href="#">11</a>
+      <a href="#">12</a>
+      <a href="#">13</a>
+      <a href="#">14</a>
+      <a href="#">15</a>
+</div>
+</li>
+</ul>
         <input
           value={this.state.currentproduct}
           onChange={this.handlecurrentproduct}
