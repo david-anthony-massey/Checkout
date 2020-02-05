@@ -1,0 +1,11 @@
+{
+    "AWSEBDockerrunVersion": "1",
+    "Image": {
+      "Name": "icy3/amazonproj"
+    },
+    "Ports": [
+      {
+        "ContainerPort": "5137"
+      }
+    ]
+  }
