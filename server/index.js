@@ -4,7 +4,7 @@ const db = require(".././database/database.js");
 const cors = require("cors");
 
 const app = express();
-const PORT = 4137;
+const PORT = 5137;
 
 app.use(cors()); // necessary for cross origin problems
 app.use(bodyParser.json());
@@ -13,64 +13,64 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + "/../client/dist"));
 // app.use(express.static(__dirname + '/../client/dist'));
 
-app.get("/", (req, res) => {
-  // console.log("In server, this is the request: ", req)
-  db.getAllTransactions(req.body.data, (err, resulty) => {
+app.get("/product/:id", (req, res) => {
+  console.log("In server, this is the request: ", req.params.id);
+  db.getProd(req.params.id, (err, resulty) => {
     if (err) {
-      console.log(err); 
+      console.log("WILLISSSSSS",err); 
     } else {
       res.send(resulty);
     }
   });
 });
-app.get("/product/:id", (req, res) => {
-  console.log("In server, this is the request: ", req.params.id);
-    db.getProd(req.params.id, (err, resulty) => {
-      if (err) {
-        console.log("WILLISSSSSS",err); 
-      } else {
-        res.send(resulty);
-      }
-    });
-  });
-  
-  app.get('/insertallTransactions', (req, res) => {
-    console.log("THISISreq",req)
-      db.createTransactions(req, (err, data) => {
-        if (err) console.error('server get error');
-        res.send(data);
-      })
-    });
-    
-    
-    app.delete("/deleteTransaction/:id", (req, res) => {
-      //the ':/id' end point acts like a variable and allows the /deleteTransaction/:id route to be dynamic, id = 1,2,etc
-      console.log("delete at id", req.params);
-      const id = req.params.id;
-    });
-    
-    app.listen(PORT, () => {
-      console.log(`listening on port ${PORT}`);
-    });
-  
-  //ZZZZZZZZZZZZZSomething like that for final?
-  //     const { id } = req.params;
-  //     db.getProd(req.params.id, (err, {id}) => {
-  //     if(err){
-  //       console.log("WILLISSSSSS",err); 
-  //     }else{
-  //     res.send({ id });
-  //     }
-  //   })
-  // })
-  //ENDZZZZZZZZZZZZZSomething like that for final?END
+app.listen(PORT, () => {
+  console.log(`listening on port ${PORT}`);
+});
 
-  // app.get("/allTransactions", (req, res) => {
+//newest CCCCC
+// app.get("/", (req, res) => {
 //   // console.log("In server, this is the request: ", req)
-//   db.getProd(req.body.productName, (err,data) => {
+//   db.getAllTransactions(req.body.data, (err, resulty) => {
 //     if (err) {
 //       console.log(err); 
 //     } else {
+//       res.send(resulty);
+//     }
+//   });
+// });
+
+// app.get('/insertallTransactions', (req, res) => {
+// console.log("THISISreq",req)
+// db.createTransactions(req, (err, data) => {
+// if (err) console.error('server get error');
+// res.send(data);
+// })
+// });
+
+
+// app.delete("/deleteTransaction/:id", (req, res) => {
+// //the ':/id' end point acts like a variable and allows the /deleteTransaction/:id route to be dynamic, id = 1,2,etc
+// console.log("delete at id", req.params);
+// const id = req.params.id;
+// }); //newestEND CCCCC
+//ZZZZZZZZZZZZZSomething like that for final?
+//     const { id } = req.params;
+//     db.getProd(req.params.id, (err, {id}) => {
+  //     if(err){
+    //       console.log("WILLISSSSSS",err); 
+    //     }else{
+      //     res.send({ id });
+      //     }
+      //   })
+      // })
+      //ENDZZZZZZZZZZZZZSomething like that for final?END
+      
+      // app.get("/allTransactions", (req, res) => {
+        //   // console.log("In server, this is the request: ", req)
+        //   db.getProd(req.body.productName, (err,data) => {
+          //     if (err) {
+            //       console.log(err); 
+            //     } else {
 //       res.send(data);
 //     }
 //   });

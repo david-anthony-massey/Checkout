@@ -9,72 +9,10 @@ h1 {
   color: #00a07b;
 }
 
-.app {
+.appTravis {
   display: flex;
   flex-flow: row;
 }
-
-.txn {
-  width: 80%;
-  margin: 20px;
-}
-
-.category {
-  width: 20%;
-  margin: 20px;
-}
-
-.txn-table {
-  display: flex;
-  flex-flow: column nowrap;
-  font-size: .8rem;
-  margin: 0.5rem;
-  line-height: 1.5;
-  flex: 1 1 auto;
-}
-
-.txn-header {
-  display: none;
-  font-weight: 700;
-  background-color: #f2f2f2;
-}
-
-.txn-header > .txn-data {
-  white-space: normal;
-}
-
-.txn-row {
-  width: 100%;
-  display: flex;
-  flex-flow: row nowrap;
-}
-
-.txn-row:nth-of-type(even) {
-  background-color: #f2f2f2;
-}
-
-.txn-row:nth-of-type(odd) {
-  background-color: #ffffff;
-}
-
-.txn-row:hover {
-  color: #00a07b;
-}
-
-.txn-data {
-  display: flex;
-  flex-flow: row nowrap;
-  flex-grow: 1;
-  flex-basis: 0;
-  padding: 0.5em;
-  word-break: break-word;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  min-width: 0px;
-  white-space: nowrap;
-  border-bottom: 1px solid #d0d0d0;
-}
-
 
 .category-list {
   background-color: #00a07b;
@@ -82,30 +20,11 @@ h1 {
   margin-top: 50px;
 }
 
-.category-data {
-  padding: 0.5em;
-  word-break: break-word;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  min-width: 0px;
-  white-space: nowrap;
-}
-
-
-select {
-  float:right;
-  padding:8px 12px;
-  border:2px solid #78788c;
-  background:0;color:#5a5a6e;
-  cursor:pointer;
-  transition:all .3s;
-}
-
-input {
+.inputTravis {
   width:100%;
   padding:10px;
-  box-sizing:border-box;
-  background:none;
+  box-sizing:border-box ;
+  background:tomato;
   outline:none;
   resize:none;
   border:0;
@@ -114,11 +33,8 @@ input {
   border-bottom:2px solid #d0d0d0;
 }
 
-input:focus {
-  border-bottom:2px solid #00a07b;
-}
 
-button {
+.buttonTravis {  
   float:right;
   padding:8px 12px;
   margin:20px 0px 20px 0px;
@@ -128,19 +44,6 @@ button {
   cursor:pointer;
   transition:all .3s;
 }
-
-button:hover {
-  background:#00a07b;
-  color:#fff;
-  border: 2px solid #00a07b;
-}
-
-.category-form {
-  margin-top: 2px;
-  display: flex;
-  flex-flow: column;
-}
-
 .checkoutbox {
     background-color: #FEBD69;
     width: 300px;
@@ -157,7 +60,8 @@ button:hover {
     margin: 100px;
     text-align: center;
   }
-  .button{
+  /*check the difference in BUTTONSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS*/
+  .buttonTravis{
   background-color: #f2f2f2;
   border: black;
   color: white;
@@ -192,7 +96,7 @@ button:hover {
   width: 0;
 }
 
-/* Create a custom checkbox */
+/* Create a custom checkbox 
 .checkmark {
   position: absolute;
   top: 0;
@@ -203,16 +107,20 @@ button:hover {
 }
 
 /* On mouse-over, add a grey background color */
+
+/*
 .container:hover input ~ .checkmark {
   background-color: #ccc;
 }
-
+/*
 /* When the checkbox is checked, add a blue background */
+/*
 .container input:checked ~ .checkmark {
   background-color: #2196F3;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
+/*
 .checkmark:after {
   content: "";
   position: absolute;
@@ -220,11 +128,13 @@ button:hover {
 }
 
 /* Show the checkmark when checked */
+
 .container input:checked ~ .checkmark:after {
   display: block;
 }
 
 /* Style the checkmark/indicator */
+/*
 .container .checkmark:after {
   left: 9px;
   top: 5px;
@@ -243,6 +153,7 @@ button:hover {
 "checkout"
 along with update cart and total"
 */
+/*
 .shopping-cart {width: 100%; border-top: 1px solid #C3C3C3; border-right: 1px solid #C3C3C3; clear: both;}
 .shopping-cart th {background: #F0F0F0;}
 .shopping-cart th, .shopping-cart td {border-bottom: 1px solid #C3C3C3; border-left: 1px solid #C3C3C3; padding: 3px;}
@@ -265,10 +176,10 @@ along with update cart and total"
 /* shopping cart end */
 
 /*grid stuff,*/
-.wrapper {
+.wrapperTravis {
   grid-template-columns: 3fr 1fr 1fr;
  }
- .letter {
+ .letterTravis {
   background-color: #0069b3;
   display: flex;
   justify-content: center;
@@ -286,7 +197,7 @@ along with update cart and total"
 /*grid stuff EWNDDDDD*/
 ul {
   list-style-type: none;
-  margin-right:985px;
+  margin-right:50px;
   padding: 0;
   overflow: hidden;
   background-repeat: no-repeat;

@@ -155,32 +155,32 @@
     return (
       <div>
         <h1>CheckoutBox</h1>
-        <div className="wrapper">
-        <div className="letter">
-        <button className="button">Upgrade and Save with Trade-in</button>
-        <div className="letter">
-        <div className="wrapper">
+        <div className="wrapperTravis">
+        <div className="letterTravis">
+        <button className="buttonTravis">Upgrade and Save with Trade-in</button>
+        <div className="letterTravis">
+        <div className="wrapperTravis">
         <div className="checkoutbox">Add to Cart</div>
         </div>
         </div>
-        <div className="letter"><div className="wrapper">
+        <div className="letterTravis"><div className="wrapperTravis">
         <div className="buynowbox">Buy Now</div>
         </div>
-        </div><div className="wrapper">
-        <div className="letter">
-            <button
+        </div><div className="wrapperTravis">
+        <div className="letterTravis">
+            <button className="buttonTravis"
             onClick={this.getTransaction}>PRICE</button>
             <div className="price_inside_buybox">$PRICE${this.state.priceStr}</div>
         </div>
-        <div className="letter">
-            <button>NAME</button>
+        <div className="letterTravis">
+            <button className="buttonTravis">NAME</button>
         </div>
         </div>
         </div>
         <ul>
         <li className="dropdown"><a className="dropbtn">Qty</a>
 <div className="dropdown-content">
-      <a href="www.amazon.com">redirecttoAmazon</a>
+      <a href="#">1</a>
       <a href="#">2</a>
       <a href="#">3</a>
       <a href="#">4</a>
@@ -198,7 +198,7 @@
 </div>
 </li>
 </ul>
-        <input
+        <input className="inputTravis"
           value={this.state.currentproduct}
           onChange={this.handlecurrentproduct}
         ></input>
@@ -206,14 +206,14 @@
         <label className="container">Yes, I want fast, FREE 
 Delivery with Amazon Prime</label>
 </div>
-        <input type="checkbox" checked="checked"></input>
+        <input className="inputTravis" type="checkbox" checked="checked"></input>
   <a href="{#cart.urls.continueShopping}" className="continue-shopping">Continue Shopping</a>
   <a href="{#cart.urls.checkout}" className="checkout-button">Checkout</a>
   <table cellSpacing="50" className="shopping-cart">  
-        <td colSpan="2"><input type="submit" name="submit" value="Update cart" /></td>
+        <td colSpan="2"><input className="inputTravis" type="submit" name="submit" value="Update cart" /></td>
         <td className="quantity-span" colSpan="2">Total</td>
         </table>
-        <button onClick={this.sendTransaction}>Add Product</button>
+        <button className="buttonTravis" onClick={this.sendTransaction}>Add Product</button>
         {this.state.productIdentifier.map((place, index) => {
           return (
             <ElementList
@@ -229,4 +229,4 @@ Delivery with Amazon Prime</label>
   }
 }
 
-ReactDOM.render(<App />, document.getElementById("app"));
+ReactDOM.render(<App />, document.getElementById("appTravis"));
