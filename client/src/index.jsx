@@ -62,31 +62,33 @@ handlecurrentproduct(event) {
 render() {
   return (
     <div>
-        <h1>CheckoutBox</h1>
-        <div className="wrapperTravis">
-        <div className="letterTravis">
+        <h1>CheckoutBox</h1><div>
+        {/* <div className="wrapperTravis"> */}
+        {/* <div className="letterTravis"> */}
+        
         <button className="buttonTravis">Upgrade and Save with Trade-in</button>
-        <div className="letterTravis">
-        <div className="wrapperTravis">
-        <div className="checkoutbox">Add to Cart</div>
-        </div>
-        </div>
-        <div className="letterTravis"><div className="wrapperTravis">
-        <div className="buynowbox">Buy Now</div>
-        </div>
-        </div><div className="wrapperTravis">
-        <div className="letterTravis">
-            <button className="buttonTravis"
+        {/* <div className="letterTravis"> */}
+        {/* <div className="wrapperTravis"> */}
+        <div className="stupiddivTravis"><div className="checkoutbox">Add to Cart</div></div>
+        {/* </div>
+        </div> */}
+        {/* <div className="letterTravis"><div className="wrapperTravis"> */}
+        <div className="stupiddivTravis"><div className="buynowbox">Buy Now</div></div>
+        {/* </div> */}
+        {/* </div><div className="wrapperTravis"> */}
+        {/* <div className="letterTravis"> */}
+        <div className="stupiddivTravis"><button className="buttonTravis"
             onClick={this.getTransaction}>PRICE</button>
-            <div className="price_inside_buybox">$PRICE${this.state.priceStr}</div>
-        </div>
-        <div className="letterTravis">
+            <div className="price_inside_buybox">$PRICE${this.state.priceStr}</div></div>
+        {/* </div> */}
+        {/* <div className="letterTravis"> */}
             <button className="buttonTravis">NAME</button>
-        </div>
-        </div>
-        </div>
+   
+        {/* </div> */}
+        {/* </div> */}
+         {/* </div> */}
         <ul>
-        <li className="dropdown"><a className="dropbtn">Qty</a>
+        <li className="dropdown"><div className="stupiddivTravis"><a className="dropbtn">Qty</a></div>
 <div className="dropdown-content">
       <a href="#">1</a>
       <a href="#">2</a>
@@ -114,9 +116,9 @@ render() {
         <label className="container">Yes, I want fast, FREE 
 Delivery with Amazon Prime</label>
 </div>
-        <input className="inputTravis" type="checkbox" checked="checked"></input>
-  <a href="{#cart.urls.continueShopping}" className="continue-shopping">Continue Shopping</a>
-  <a href="{#cart.urls.checkout}" className="checkout-button">Checkout</a>
+        {/* <input className="inputTravis" type="checkbox" checked="checked"></input> */}
+  {/* <a href="{#cart.urls.continueShopping}" className="continue-shopping">Continue Shopping</a>
+  <a href="{#cart.urls.checkout}" className="checkout-button">Checkout</a> */}
   <table cellSpacing="50" className="shopping-cart">  
         <td colSpan="2"><input className="inputTravis" type="submit" name="submit" value="Update cart" /></td>
         <td className="quantity-span" colSpan="2">Total</td>

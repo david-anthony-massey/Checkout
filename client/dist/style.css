@@ -11,7 +11,7 @@ h1 {
 
 .appTravis {
   display: flex;
-  flex-flow: row;
+  flex-flow: column-reverse;
 }
 
 .category-list {
@@ -176,10 +176,18 @@ along with update cart and total"
 /* shopping cart end */
 
 /*grid stuff,*/
+.stupiddivTravis{
+  margin-left:1300px;
+
+}
 .wrapperTravis {
-  grid-template-columns: 3fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr  ;
+  grid-template-columns: [col1-start] 1fr [col1-end col2-start] 1fr [col2-end];
+  width:50px;
  }
  .letterTravis {
+  width: 5%;
   background-color: #0069b3;
   display: flex;
   justify-content: center;
@@ -205,12 +213,11 @@ ul {
   background-color: #333;
  
 }
-.dropbtn {
-  display: inline-block;
+.dropbtn {  
   color: white;
-  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  margin-left: 500px;
 }
 
 li a:hover, .dropdown:hover .dropbtn {
