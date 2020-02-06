@@ -27,6 +27,11 @@ app.listen(PORT, () => {
   console.log(`listening on port ${PORT}`);
 });
 
+
+//ZZZZZZLeaving these down here as examples
+  // or referencesZZZZZZZZZ
+  //
+  
 //newest CCCCC
 // app.get("/", (req, res) => {
 //   // console.log("In server, this is the request: ", req)

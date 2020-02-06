@@ -33,6 +33,9 @@ module.exports = {
   getProd
 };
 
+//ZZZZZZLeaving these down here as examples
+  // or referencesZZZZZZZZZ
+  //
 // getAllTransactions,
 // createTransactions,
 // const getAllTransactions = callback => {
