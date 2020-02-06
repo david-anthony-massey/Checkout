@@ -4,11 +4,6 @@ body {
   font-family:'Montserrat',sans-serif;
 }
 
-h1 {
-  margin: 20px;
-  color: #00a07b;
-}
-
 .appTravis {
   display: flex;
   flex-flow: column-reverse;
@@ -19,7 +14,10 @@ h1 {
   color: white;
   margin-top: 50px;
 }
-
+.boatsnTravis{
+  margin-left: 1200px;
+  margin-right:300px;
+}
 .inputTravis {
   width:100%;
   padding:10px;
@@ -49,7 +47,6 @@ h1 {
     width: 300px;
     border: 10px black;
     padding: 10px;
-    margin: 100px;
     text-align: center;
   }
   .buynowbox {
@@ -57,7 +54,6 @@ h1 {
     width: 300px;
     border: 10px black;
     padding: 10px;
-    margin: 100px;
     text-align: center;
   }
   /*check the difference in BUTTONSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS*/
@@ -177,7 +173,7 @@ along with update cart and total"
 
 /*grid stuff,*/
 .stupiddivTravis{
-  margin-left:1300px;
+  margin-left:1200px;
 
 }
 .wrapperTravis {
@@ -205,16 +201,18 @@ along with update cart and total"
 /*grid stuff EWNDDDDD*/
 ul {
   list-style-type: none;
-  margin-right:50px;
   padding: 0;
   overflow: hidden;
   background-repeat: no-repeat;
-  margin-left: 500px;
+  margin-left: 1200px;
+  margin-right: 620px;
   background-color: #333;
  
 }
 .dropbtn {  
+  display: inline-block;
   color: white;
+  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   margin-left: 500px;
@@ -253,7 +251,13 @@ li.dropdown {
 
 .price_inside_buybox
 {
-  text-decoration-color: crimson
+  color:red;
 }
         
-    
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}

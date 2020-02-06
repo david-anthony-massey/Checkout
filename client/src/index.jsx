@@ -62,33 +62,31 @@ handlecurrentproduct(event) {
 render() {
   return (
     <div>
-        <h1>CheckoutBox</h1><div>
+        <div>
         {/* <div className="wrapperTravis"> */}
         {/* <div className="letterTravis"> */}
         
-        <button className="buttonTravis">Upgrade and Save with Trade-in</button>
-        {/* <div className="letterTravis"> */}
-        {/* <div className="wrapperTravis"> */}
-        <div className="stupiddivTravis"><div className="checkoutbox">Add to Cart</div></div>
-        {/* </div>
-        </div> */}
-        {/* <div className="letterTravis"><div className="wrapperTravis"> */}
-        <div className="stupiddivTravis"><div className="buynowbox">Buy Now</div></div>
-        {/* </div> */}
-        {/* </div><div className="wrapperTravis"> */}
-        {/* <div className="letterTravis"> */}
-        <div className="stupiddivTravis"><button className="buttonTravis"
-            onClick={this.getTransaction}>PRICE</button>
-            <div className="price_inside_buybox">$PRICE${this.state.priceStr}</div></div>
-        {/* </div> */}
-        {/* <div className="letterTravis"> */}
-            <button className="buttonTravis">NAME</button>
-   
-        {/* </div> */}
-        {/* </div> */}
-         {/* </div> */}
-        <ul>
-        <li className="dropdown"><div className="stupiddivTravis"><a className="dropbtn">Qty</a></div>
+        <div className="stupiddivTravis">
+            <div className="price_inside_buybox">
+              ${this.state.priceStr}
+              </div><br></br>
+              </div>
+        <div className="boatsnTravis">FREE Shipping  on orders over $25.00 shipped by Amazon or get Fast, Free Shipping with Amazon Prime
+         </div>
+           <br>
+            </br>
+              <div className="boatsnTravis">Get it as soon as Thursday, Feb. 13 - 
+                Friday, Feb. 14 if you choose Two-Day Shipping at checkout. 
+                  </div>
+<div className="boatsnTravis">
+Usually ships within 6 days.
+</div>
+<br></br>
+<div className="boatsnTravis">In Stock</div>
+
+<ul>
+        <li className="dropdown"><div className="stupiddivTravis"><a className="dropbtn">Qty</a>
+        </div>
 <div className="dropdown-content">
       <a href="#">1</a>
       <a href="#">2</a>
@@ -108,23 +106,37 @@ render() {
 </div>
 </li>
 </ul>
-        <input className="inputTravis"
-          value={this.state.currentproduct}
-          onChange={this.handlecurrentproduct}
-          ></input>
-        
-        <label className="container">Yes, I want fast, FREE 
-Delivery with Amazon Prime</label>
+        <div className="stupiddivTravis"><br></br><div className="checkoutbox">Add to Cart</div>
+        </div>
+      
+        <div className="stupiddivTravis"><br></br><div className="buynowbox">Buy Now</div>
+        </div>
+        <div className="boatsnTravis">
+        <br></br>
+Ships from and sold by Amazon.com</div>
+  <br></br>
+<div className="boatsnTravis">  <label className="container">Yes, I want fast, FREE 
+Delivery with Amazon Prime</label><input className="inputTravis" type="checkbox" checked="checked"></input>
+
 </div>
-        {/* <input className="inputTravis" type="checkbox" checked="checked"></input> */}
+            {/* <button className="buttonTravis">NAME</button> */}
+        <br>
+        </br>
+        <div className="boatsnTravis" type="checkbox" checked="checked">Enjoy fast, FREE delivery, exclusive deals and award-winning movies & TV shows with Prime
+Start saving today with Fast, FREE Delivery
+
+</div><br></br>
+<div className="boatsnTravis"> SELECT DELIVERY LOCATION</div>
+</div>
+         
   {/* <a href="{#cart.urls.continueShopping}" className="continue-shopping">Continue Shopping</a>
-  <a href="{#cart.urls.checkout}" className="checkout-button">Checkout</a> */}
+  <a href="{#cart.urls.checkout}" className="checkout-button">Checkout</a> 
   <table cellSpacing="50" className="shopping-cart">  
         <td colSpan="2"><input className="inputTravis" type="submit" name="submit" value="Update cart" /></td>
         <td className="quantity-span" colSpan="2">Total</td>
-        </table>
-        <button className="buttonTravis" onClick={this.sendTransaction}>Add Product</button>
-        {this.state.productIdentifier.map((place, index) => {
+        </table> */}
+        {/* <button className="buttonTravis" onClick={this.sendTransaction}>Add Product</button> */}
+        {/* {this.state.productIdentifier.map((place, index) => {
           return (
             <ElementList
             key={index}
@@ -133,14 +145,22 @@ Delivery with Amazon Prime</label>
             deleteTransaction={this.deleteTransaction}
             />
             );
-          })}
+          })} */}
       </div>
     );
     
   }
 }
 
+
 ReactDOM.render(<App />, document.getElementById("appTravis"));
+
+// GOOD BYE RED LINE :( 
+  // I WILL MISS YOU!!!!!!!!!!! RED 
+{/* <input className="inputTravis"
+  value={this.state.currentproduct}
+  onChange={this.handlecurrentproduct}
+  ></input> */}
 
 // attempt1
 // async componentDidMount() {
