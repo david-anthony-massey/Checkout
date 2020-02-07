@@ -1,18 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 body {
-  font-family:'Montserrat',sans-serif;
+  font-family:"Amazon Ember",Arial,sans-serif;
+  border:1px solid;
+  border-radius: 5px;
+  border-color: rgb(197, 197, 197);
+  margin-top:40px;
+  padding:15px;
 }
 
-.appTravis {
+#appTravis {
   display: flex;
   flex-flow: column-reverse;
 }
 
-.category-list {
-  background-color: #00a07b;
-  color: white;
-  margin-top: 50px;
+.boldTravis {
+  font-weight: 700;
+}
+.stockyTravis
+{
+  color: #007600;
+  font-size: 17px!important;
+  line-height: 1.255!important;
 }
 .boatsnTravis{
   margin-left: 1px;
@@ -44,18 +53,30 @@ body {
   transition:all .3s;
 }
 .checkoutbox {
-    background-color: #FEBD69;
+    /* background-color: #FEBD69; */
+    background: linear-gradient(to bottom, #f7e2aa, #f2ca57);
     width: 300px;
     border: 10px black;
     padding: 10px;
     text-align: center;
+  border-radius: 3px;
+  border-width: 1px;
+  border-style:solid;
+  border-color: #ADB1B8 #A2A6AC #8D9096;
+
+
   }
   .buynowbox {
-    background-color: #FF9900;
+    /* background-color: #FF9900; */
+    background: linear-gradient(to bottom, #f6cc95, #ef9e26);
     width: 300px;
     border: 10px black;
     padding: 10px;
     text-align: center;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style:solid;
+    border-color: #ADB1B8 #A2A6AC #8D9096;
   }
   /*check the difference in BUTTONSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS*/
   .buttonTravis{
@@ -91,6 +112,13 @@ body {
   cursor: pointer;
   height: 0;
   width: 0;
+}
+
+.price_inside_buybox
+{
+  font-size: 22px;
+  font-weight: bold;
+  color:red;
 }
 
 /* Create a custom checkbox 
@@ -177,7 +205,8 @@ along with update cart and total"
   /* margin-left:1200px; */
   margin-left:1px;
 
-}
+} 
+/*
 .wrapperTravis {
   display: grid;
   grid-template-columns: 3fr 1fr 1fr  ;
@@ -198,42 +227,55 @@ along with update cart and total"
   font-weight: 200;
   cursor: pointer;
   transition: all .3s ease;
-}
+} */
 
 /*grid stuff EWNDDDDD*/
-.ulTravis {
-  display:inline-block;
+/* .ulTravis { */
+  /* 620 */
+  /* 1200 */
+  /* display:inline-block;
   list-style-type: none;
   padding: 0;
   overflow: hidden;
   background-repeat: no-repeat;
   margin-left: 1px;
-  /* 1200 */
   margin-right: 6px;
-  /* 620 */
-  background-color: #333;
+  background-color: #f9f9f9;
  
-}
-.dropbtn {  
+} */
+/* #appTravis .dropbtnx {  
   display: inline-block;
   position: relative;
-  color: white;
+  color: black;
   /* text-align: center; */
-  padding: 14px 16px;
-  text-decoration: none;
   /* margin-left: 500px; */
+  /* padding: 14px 16px;
+  text-decoration: none;
   margin-left: 5px;
+} */ 
+
+/* hover attempt but conflicted with other hovers*/
+/* #appTravis .dropdown
+{color: black;
+ 
+  text-decoration: none;
+  display: block;
+  text-align: left;} */
+  /*
+#appTravis li a:hover, 
+#appTravis .dropdown:hover .dropbtnx {
+  background-color: transparent;
+  /* background-color: #e7e9ec; */
+  /*
+  border-color: #ADB1B8 #A2A6AC #8D9096;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
-}
-
-li.dropdown {
+#appTravis li.dropdown
+ {
   display: inline-block;
 }
 
-.dropdown-content {
+#appTravis .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -242,21 +284,19 @@ li.dropdown {
   z-index: 1;
 }
 
-.dropdown-content a {
-  color: black;
+#appTravis .dropdown-content a .dropdown {
   padding: 12px 16px;
+  color: black;
   text-decoration: none;
   display: block;
   text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1;}
+#appTravis .dropdown-content a:hover {background-color: #f1f1f1;}
 
-.dropdown:hover .dropdown-content {
+#appTravis .dropdown:hover .dropdown-content {
   display: block;
 }
 
-.price_inside_buybox
-{
-  color:red;
-}
+
+*/

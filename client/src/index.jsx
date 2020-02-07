@@ -15,22 +15,34 @@ class App extends React.Component {
         ALLPRODUCTS: data,
         moreProducts: [],
         insertAllProds: [],
-        insertProd: ""
+        insertProd: "",
+        productId:3,
       };
 
       this.sendTransaction = this.sendTransaction.bind(this);
       this.handlecurrentproduct = this.handlecurrentproduct.bind(this);
+      this.getTransaction=this.getTransaction.bind(this);
 
   }
   componentDidMount() {
-    this.getTransaction()
+    
+    window.addEventListener('click', (event) => {
+      if (event.target.getAttribute('data-id') && event.target.getAttribute('data-id') !== this.state.productId && !isNaN(event.target.getAttribute('data-id'))) {
+        this.setState({ productId: event.target.getAttribute('data-id') }, () => {
+          // ***insert your code here for what happen when you change productId in State***
+          this.getTransaction(this.state.productId)
+        });
+      }
+    });
+    this.getTransaction(this.state.productId)
   }
 
+
   getTransaction(){
-    let random = Math.floor(Math.random()*102)
-      axios.get(`http://amazonproj-env.uee7t6cmb9.us-east-2.elasticbeanstalk.com/product/${random}`)
+    // let random = Math.floor(Math.random()*102)
+      axios.get(`http://amazonproj-env.uee7t6cmb9.us-east-2.elasticbeanstalk.com/product/${this.state.productId}`)
     .then(response => {
-        console.log("Response on frontend at route '/product/${random}'", response.data[0].price)
+        console.log("Response on frontend at route '/product/${productId}'", response.data[0].price)
       this.setState({ priceStr: response.data[0].price });
 
     }) 
@@ -71,41 +83,65 @@ render() {
               ${this.state.priceStr}
               </div><br></br>
               </div>
-        <div className="boatsnTravis">FREE Shipping  on orders over $25.00 shipped by Amazon or get Fast, Free Shipping with Amazon Prime
-         </div>
+              <div><a href="#Saskatchewanizon">FREE Shipping</a></div>
+         on orders over $25.00 shipped by Saskatchewanizon or get 
+         <div className="boldTravis">Fast, Free Shipping with <a href="#Saskatchewanizon">Saskatchewanizon Prime</a></div>
            <br>
             </br>
-              <div className="boatsnTravis">Get it as soon as Thursday, Feb. 13 - 
-                Friday, Feb. 14 if you choose Two-Day Shipping at checkout. 
-                  </div>
+            <div className="boldTravis">Get it as soon as Thursday, Feb. 13 - 
+                Friday, Feb. 14 
+            </div>
+                <span className="boldTravis"> if you choose Two-Day Shipping </span>
+                 at checkout. 
 <div className="boatsnTravis">
 Usually ships within 6 days.
 </div>
 <br></br>
-<div className="boatsnTravis">In Stock</div>
+<div className="stockyTravis">In Stock</div>
 
-<ul className= "ulTravis">>
-        <li className="dropdown"><div className="stupiddivTravis"><a className="dropbtn">Qty</a>
+{/* <ul className= "ulTravis">
+        <li className="dropdown"><div className="stupiddivTravis"><a className="dropbtnx"> Qty: 1</a>
         </div>
 <div className="dropdown-content">
-      <a href="#">1</a>
-      <a href="#">2</a>
-      <a href="#">3</a>
-      <a href="#">4</a>
-      <a href="#">5</a>
-      <a href="#">6</a>
-      <a href="#">7</a>
-      <a href="#">8</a>
-      <a href="#">9</a>
-      <a href="#">10</a>
-      <a href="#">11</a>
-      <a href="#">12</a>
-      <a href="#">13</a>
-      <a href="#">14</a>
-      <a href="#">15</a>
+      <a href="#Saskatchewanizon">1</a>
+      <a href="#Saskatchewanizon">2</a>
+      <a href="#Saskatchewanizon">3</a>
+      <a href="#Saskatchewanizon">4</a>
+      <a href="#Saskatchewanizon">5</a>
+      <a href="#Saskatchewanizon">6</a>
+      <a href="#Saskatchewanizon">7</a>
+      <a href="#Saskatchewanizon">8</a>
+      <a href="#Saskatchewanizon">9</a>
+      <a href="#Saskatchewanizon">10</a>
+      <a href="#Saskatchewanizon">11</a>
+      <a href="#Saskatchewanizon">12</a>
+      <a href="#Saskatchewanizon">13</a>
+      <a href="#Saskatchewanizon">14</a>
+      <a href="#Saskatchewanizon">15</a>
 </div>
 </li>
-</ul>
+</ul> */}
+<label for="Qty">Qty:  </label>
+
+<select id="Qty">
+  <option value="volSaskatchewanizonvo">1</option>
+  <option value="Saskatchewanizon2">2</option>
+  <option value="Saskatchewanizon3">3</option>
+  <option value="Saskatchewanizon4">4</option>
+  <option value="volSaskatchewanizo1nvo">5</option>
+  <option value="Saskatchewanizon21">6</option>
+  <option value="Saskatchewanizon31">7</option>
+  <option value="Saskatchewanizon41">8</option>
+  <option value="volSaskatchewanizo2nvo">9</option>
+  <option value="Saskatchewanizon22">10</option>
+  <option value="Saskatchewanizon32">11</option>
+  <option value="Saskatchewanizon42">12</option>
+  <option value="volSaskatchewanizonvo3">13</option>
+  <option value="Saskatchewanizon23">14</option>
+  <option value="Saskatchewanizon33">15</option>
+  <option value="Saskatchewanizon43">16</option>
+</select>
+  
         <div className="stupiddivTravis"><br></br><div className="checkoutbox">Add to Cart</div>
         </div>
       
@@ -113,20 +149,25 @@ Usually ships within 6 days.
         </div>
         <div className="boatsnTravis">
         <br></br>
-Ships from and sold by Amazon.com</div>
+Ships from and sold by <a href="#Saskatchewanizon">Saskatchewanizon.com</a></div>
   <br></br>
 <div className="boatsnTravis">  <label className="container">Yes, I want fast, FREE 
-Delivery with Amazon Prime</label><input className="inputTravis" type="checkbox" checked="checked"></input>
+Delivery
+<div>with Saskatchewanizon Prime</div> </label><input className="inputTravis" type="checkbox" checked="checked"></input>
 
 </div>
             {/* <button className="buttonTravis">NAME</button> */}
         <br>
         </br>
-        <div className="boatsnTravis" type="checkbox" checked="checked">Enjoy fast, FREE delivery, exclusive deals and award-winning movies & TV shows with Prime
-Start saving today with Fast, FREE Delivery
+        <br></br>
+        <div className="boatsnTravis" type="checkbox" checked="checked">Enjoy fast, FREE delivery, exclusive deals and 
+        <div>award-winning movies & TV shows with Prime </div>
+        <div>
+Start saving today with Fast, FREE Delivery</div>
+<br></br>
 
 </div><br></br>
-<div className="boatsnTravis"> SELECT DELIVERY LOCATION</div>
+<div className="boatsnTravis"> <a href="#Saskatchewanizon">Select delivery location</a></div>
 </div>
          
   {/* <a href="{#cart.urls.continueShopping}" className="continue-shopping">Continue Shopping</a>
