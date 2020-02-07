@@ -15,8 +15,9 @@ body {
   margin-top: 50px;
 }
 .boatsnTravis{
-  margin-left: 1200px;
-  margin-right:300px;
+  margin-left: 1px;
+  /* 1200px */
+  /* margin-right:300px; */
 }
 .inputTravis {
   width:100%;
@@ -173,7 +174,8 @@ along with update cart and total"
 
 /*grid stuff,*/
 .stupiddivTravis{
-  margin-left:1200px;
+  /* margin-left:1200px; */
+  margin-left:1px;
 
 }
 .wrapperTravis {
@@ -199,23 +201,28 @@ along with update cart and total"
 }
 
 /*grid stuff EWNDDDDD*/
-ul {
+.ulTravis {
+  display:inline-block;
   list-style-type: none;
   padding: 0;
   overflow: hidden;
   background-repeat: no-repeat;
-  margin-left: 1200px;
-  margin-right: 620px;
+  margin-left: 1px;
+  /* 1200 */
+  margin-right: 6px;
+  /* 620 */
   background-color: #333;
  
 }
 .dropbtn {  
   display: inline-block;
+  position: relative;
   color: white;
-  text-align: center;
+  /* text-align: center; */
   padding: 14px 16px;
   text-decoration: none;
-  margin-left: 500px;
+  /* margin-left: 500px; */
+  margin-left: 5px;
 }
 
 li a:hover, .dropdown:hover .dropbtn {
@@ -252,12 +259,4 @@ li.dropdown {
 .price_inside_buybox
 {
   color:red;
-}
-        
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
 }

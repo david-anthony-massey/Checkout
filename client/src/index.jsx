@@ -28,7 +28,7 @@ class App extends React.Component {
 
   getTransaction(){
     let random = Math.floor(Math.random()*102)
-      axios.get(`/product/${random}`)
+      axios.get(`http://amazonproj-env.uee7t6cmb9.us-east-2.elasticbeanstalk.com/product/${random}`)
     .then(response => {
         console.log("Response on frontend at route '/product/${random}'", response.data[0].price)
       this.setState({ priceStr: response.data[0].price });
@@ -84,7 +84,7 @@ Usually ships within 6 days.
 <br></br>
 <div className="boatsnTravis">In Stock</div>
 
-<ul>
+<ul className= "ulTravis">>
         <li className="dropdown"><div className="stupiddivTravis"><a className="dropbtn">Qty</a>
         </div>
 <div className="dropdown-content">
