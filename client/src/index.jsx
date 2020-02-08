@@ -8,13 +8,8 @@ class App extends React.Component {
     super(props);
       this.state = {
         quantity: 1,
-        productIdentifier: data,
-        productName: "",
         priceStr: "",
-        ALLPRODUCTS: data,
         moreProducts: [],
-        insertAllProds: [],
-        insertProd: data,
         productId:3,
       };
 
@@ -51,7 +46,7 @@ this.handlecurrentproduct = this.handlecurrentproduct.bind(this);
   }
 
 
-  // this.handlecurrentproduct = this.handlecurrentproduct.bind(this);
+
 handlecurrentproduct() {
   let temp = 1
   let upState = this.state.currentclick
@@ -60,9 +55,7 @@ handlecurrentproduct() {
   this.setState({
     currentclick: change
   });
-  console.log('This is current click in handlecurrentproduct', this.state.currentclick)
-  //let temp = this.state.emptyThang;
-  // temp.push(this.state.input);
+
 }
 
 handleClickOption(event){
@@ -154,7 +147,7 @@ ReactDOM.render(<App />, document.getElementById("appTravis"));
         </table> */}
         {/* <button className="buttonTravis" onClick={this.sendTransaction}>Add Product</button> */}
         {/* {this.state.productIdentifier.map((place, index) => {
-          return (
+          return (      // state  productIdentifier: data,
             <ElementList
             key={index}
             id={place.id}
@@ -224,7 +217,7 @@ ReactDOM.render(<App />, document.getElementById("appTravis"));
 //   // Load async data.
 //   let userData = await API.get("/", {
 //     params: {
-//       results: 1,
+//       results: 1,              // state         productName: "",
 //       inc: "productName,price"
 //     }
 //   });
@@ -291,7 +284,7 @@ ReactDOM.render(<App />, document.getElementById("appTravis"));
                     // axios
                     // .get("http://localhost:4137/", )
                     // .then(response => {
-                      //   this.setState({
+                      //   this.setState({    //state         insertAllProds: [],
                         //     insertAllProds: response.data.productIdentifier
                         //   });
                         // })
