@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import axios from "axios";
-import ElementList from "./components/ElementList.jsx";
 import data from "../../productsJSON.js";
 
 class App extends React.Component {
@@ -19,8 +18,7 @@ class App extends React.Component {
         productId:3,
       };
 
-      this.sendTransaction = this.sendTransaction.bind(this);
-      this.handlecurrentproduct = this.handlecurrentproduct.bind(this);
+
       this.getTransaction=this.getTransaction.bind(this);
 
   }
@@ -29,7 +27,6 @@ class App extends React.Component {
     window.addEventListener('click', (event) => {
       if (event.target.getAttribute('data-id') && event.target.getAttribute('data-id') !== this.state.productId && !isNaN(event.target.getAttribute('data-id'))) {
         this.setState({ productId: event.target.getAttribute('data-id') }, () => {
-          // ***insert your code here for what happen when you change productId in State***
           this.getTransaction(this.state.productId)
         });
       }
@@ -50,55 +47,104 @@ class App extends React.Component {
       console.log(".catch response ERROR on frontend at route /product/${random}");
     });
   }
-  sendTransaction() {
-    let newTransaction = {
-      currentproduct: this.state.currentproduct
-    };
-    
-    axios.get("/", {newTransaction: newTransaction})
-    .then(response => {
-      console.log("Response on frontend at route '/'", response.data[0].price);
-        this.setState({inputData: "" }, this.getTransaction());
-        // using callback parameter in setState
-    })
-    .catch(function(error) {
-      console.log(error);
-    });
-  }
-handlecurrentproduct(event) {
-  this.setState({
-    currentproduct: event.target.value
-  });
-}
 
 render() {
   return (
     <div>
         <div>
-        {/* <div className="wrapperTravis"> */}
-        {/* <div className="letterTravis"> */}
-        
         <div className="stupiddivTravis">
             <div className="price_inside_buybox">
               ${this.state.priceStr}
-              </div><br></br>
-              </div>
+                </div><br></br>
+                </div>
               <div><a href="#Saskatchewanizon">FREE Shipping</a></div>
-         on orders over $25.00 shipped by Saskatchewanizon or get 
+              on orders over $25.00 shipped by Saskatchewanizon or get 
          <div className="boldTravis">Fast, Free Shipping with <a href="#Saskatchewanizon">Saskatchewanizon Prime</a></div>
-           <br>
+            <br>
             </br>
             <div className="boldTravis">Get it as soon as Thursday, Feb. 13 - 
-                Friday, Feb. 14 
+            Friday, Feb. 14 
             </div>
-                <span className="boldTravis"> if you choose Two-Day Shipping </span>
-                 at checkout. 
-<div className="boatsnTravis">
-Usually ships within 6 days.
-</div>
-<br></br>
-<div className="stockyTravis">In Stock</div>
+              <span className="boldTravis"> if you choose Two-Day Shipping </span>
+              at checkout. 
+          <div className="boatsnTravis">
+          Usually ships within 6 days.
+          </div>
+            <br></br>
+            <div className="stockyTravis">In Stock</div>
+            <label for="Qty">Qty:  </label>
+            <select id="Qty">
+              <option value="volSaskatchewanizonvo">1</option>
+              <option value="Saskatchewanizon2">2</option>
+              <option value="Saskatchewanizon3">3</option>
+              <option value="Saskatchewanizon4">4</option>
+              <option value="volSaskatchewanizo1nvo">5</option>
+              <option value="Saskatchewanizon21">6</option>
+              <option value="Saskatchewanizon31">7</option>
+              <option value="Saskatchewanizon41">8</option>
+              <option value="volSaskatchewanizo2nvo">9</option>
+              <option value="Saskatchewanizon22">10</option>
+              <option value="Saskatchewanizon32">11</option>
+              <option value="Saskatchewanizon42">12</option>
+              <option value="volSaskatchewanizonvo3">13</option>
+              <option value="Saskatchewanizon23">14</option>
+              <option value="Saskatchewanizon33">15</option>
+              <option value="Saskatchewanizon43">16</option>
+            </select>
+              <div className="stupiddivTravis"><br></br><div className="checkoutbox">Add to Cart</div>
+              </div>
+                <div className="stupiddivTravis"><br></br><div className="buynowbox">Buy Now</div>
+                </div>
+              <div className="boatsnTravis">
+                <br></br>
+                Ships from and sold by <a href="#Saskatchewanizon">Saskatchewanizon.com</a></div>
+                <br></br>
+                <div className="boatsnTravis">  <label className="container">Yes, I want fast, FREE 
+                Delivery
+                <div>with Saskatchewanizon Prime</div> </label><input className="inputTravis" type="checkbox" checked="checked"></input>
+                </div>
+                  <br></br>
+                  <br></br>
+                <div className="boatsnTravis" type="checkbox" checked="checked">Enjoy fast, FREE delivery, exclusive deals and 
+                <div>award-winning movies & TV shows with Prime </div>
+                <div>
+                Start saving today with Fast, FREE Delivery</div>
+                  <br>
+                  </br>           
+                </div>
+                  <br>
+                  </br> 
+                <div className="boatsnTravis"> <a href="#Saskatchewanizon">Select delivery location</a></div>
+                </div>
+                </div>
+                );
+                    }}
+ReactDOM.render(<App />, document.getElementById("appTravis"));
 
+
+
+
+
+//stuff for checkout button and the map function that mapped over instock 102 times,
+  {/* <a href="{#cart.urls.continueShopping}" className="continue-shopping">Continue Shopping</a>
+  <a href="{#cart.urls.checkout}" className="checkout-button">Checkout</a> 
+  <table cellSpacing="50" className="shopping-cart">  
+        <td colSpan="2"><input className="inputTravis" type="submit" name="submit" value="Update cart" /></td>
+        <td className="quantity-span" colSpan="2">Total</td>
+        </table> */}
+        {/* <button className="buttonTravis" onClick={this.sendTransaction}>Add Product</button> */}
+        {/* {this.state.productIdentifier.map((place, index) => {
+          return (
+            <ElementList
+            key={index}
+            id={place.id}
+            place={place.productIdentifier}
+            deleteTransaction={this.deleteTransaction}
+            />
+            );
+          })} */}
+
+//stuff for dropdown but conflicting with others compoennts, looks more like real amazon,
 {/* <ul className= "ulTravis">
         <li className="dropdown"><div className="stupiddivTravis"><a className="dropbtnx"> Qty: 1</a>
         </div>
@@ -121,83 +167,37 @@ Usually ships within 6 days.
 </div>
 </li>
 </ul> */}
-<label for="Qty">Qty:  </label>
+//stuff for original get route...
+// this.sendTransaction = this.sendTransaction.bind(this);
 
-<select id="Qty">
-  <option value="volSaskatchewanizonvo">1</option>
-  <option value="Saskatchewanizon2">2</option>
-  <option value="Saskatchewanizon3">3</option>
-  <option value="Saskatchewanizon4">4</option>
-  <option value="volSaskatchewanizo1nvo">5</option>
-  <option value="Saskatchewanizon21">6</option>
-  <option value="Saskatchewanizon31">7</option>
-  <option value="Saskatchewanizon41">8</option>
-  <option value="volSaskatchewanizo2nvo">9</option>
-  <option value="Saskatchewanizon22">10</option>
-  <option value="Saskatchewanizon32">11</option>
-  <option value="Saskatchewanizon42">12</option>
-  <option value="volSaskatchewanizonvo3">13</option>
-  <option value="Saskatchewanizon23">14</option>
-  <option value="Saskatchewanizon33">15</option>
-  <option value="Saskatchewanizon43">16</option>
-</select>
+// sendTransaction() {
+//   let newTransaction = {
+//     currentproduct: this.state.currentproduct
+//   };
   
-        <div className="stupiddivTravis"><br></br><div className="checkoutbox">Add to Cart</div>
-        </div>
-      
-        <div className="stupiddivTravis"><br></br><div className="buynowbox">Buy Now</div>
-        </div>
-        <div className="boatsnTravis">
-        <br></br>
-Ships from and sold by <a href="#Saskatchewanizon">Saskatchewanizon.com</a></div>
-  <br></br>
-<div className="boatsnTravis">  <label className="container">Yes, I want fast, FREE 
-Delivery
-<div>with Saskatchewanizon Prime</div> </label><input className="inputTravis" type="checkbox" checked="checked"></input>
-
-</div>
-            {/* <button className="buttonTravis">NAME</button> */}
-        <br>
-        </br>
-        <br></br>
-        <div className="boatsnTravis" type="checkbox" checked="checked">Enjoy fast, FREE delivery, exclusive deals and 
-        <div>award-winning movies & TV shows with Prime </div>
-        <div>
-Start saving today with Fast, FREE Delivery</div>
-<br></br>
-
-</div><br></br>
-<div className="boatsnTravis"> <a href="#Saskatchewanizon">Select delivery location</a></div>
-</div>
-         
-  {/* <a href="{#cart.urls.continueShopping}" className="continue-shopping">Continue Shopping</a>
-  <a href="{#cart.urls.checkout}" className="checkout-button">Checkout</a> 
-  <table cellSpacing="50" className="shopping-cart">  
-        <td colSpan="2"><input className="inputTravis" type="submit" name="submit" value="Update cart" /></td>
-        <td className="quantity-span" colSpan="2">Total</td>
-        </table> */}
-        {/* <button className="buttonTravis" onClick={this.sendTransaction}>Add Product</button> */}
-        {/* {this.state.productIdentifier.map((place, index) => {
-          return (
-            <ElementList
-            key={index}
-            id={place.id}
-            place={place.productIdentifier}
-            deleteTransaction={this.deleteTransaction}
-            />
-            );
-          })} */}
-      </div>
-    );
-    
-  }
-}
+//   axios.get("/", {newTransaction: newTransaction})
+//   .then(response => {
+//     console.log("Response on frontend at route '/'", response.data[0].price);
+//       this.setState({inputData: "" }, this.getTransaction());
+//       // using callback parameter in setState
+//   })
+//   .catch(function(error) {
+//     console.log(error);
+//   });
+// }
 
 
-ReactDOM.render(<App />, document.getElementById("appTravis"));
+//stuff that was going to be used for handlers,
+// this.handlecurrentproduct = this.handlecurrentproduct.bind(this);
+// handlecurrentproduct(event) {
+//   this.setState({
+//     currentproduct: event.target.value
+//   });
+// }
+
+
 
 // GOOD BYE RED LINE :( 
-  // I WILL MISS YOU!!!!!!!!!!! RED 
 {/* <input className="inputTravis"
   value={this.state.currentproduct}
   onChange={this.handlecurrentproduct}
