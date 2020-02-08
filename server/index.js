@@ -13,6 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + "/../client/dist"));
 // app.use(express.static(__dirname + '/../client/dist'));
 
+//get route necessary to get id from db
 app.get("/product/:id", (req, res) => {
   console.log("In server, this is the request: ", req.params.id);
   db.getProd(req.params.id, (err, resulty) => {
@@ -26,6 +27,8 @@ app.get("/product/:id", (req, res) => {
 app.listen(PORT, () => {
   console.log(`listening on port ${PORT}`);
 });
+
+
 
 
 //ZZZZZZLeaving these down here as examples

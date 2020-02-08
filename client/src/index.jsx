@@ -23,7 +23,9 @@ class App extends React.Component {
 
   }
   componentDidMount() {
-    
+
+    //handles the clicks from other components and responds with my productid from database 
+    //
     window.addEventListener('click', (event) => {
       if (event.target.getAttribute('data-id') && event.target.getAttribute('data-id') !== this.state.productId && !isNaN(event.target.getAttribute('data-id'))) {
         this.setState({ productId: event.target.getAttribute('data-id') }, () => {

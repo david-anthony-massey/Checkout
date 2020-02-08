@@ -14,7 +14,7 @@ connection.query("SELECT 1 + 1 AS solution", function(error, results, fields) {
   if (error) throw error;
   console.log("The solution is: ", results[0].solution);
 });
-
+//function that gets the product form the database
 const getProd = function(id, callback) {
   console.log("HEY THIS IS IT",id)
   connection.query(`select price from boxey where id = '${id}';`, (err, data) => {
@@ -32,6 +32,8 @@ const getProd = function(id, callback) {
 module.exports = {
   getProd
 };
+
+
 
 //ZZZZZZLeaving these down here as examples
   // or referencesZZZZZZZZZ
