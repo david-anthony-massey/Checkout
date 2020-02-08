@@ -18,7 +18,7 @@ app.get("/product/:id", (req, res) => {
   console.log("In server, this is the request: ", req.params.id);
   db.getProd(req.params.id, (err, resulty) => {
     if (err) {
-      console.log("WILLISSSSSS",err); 
+      res.status(500, err)
     } else {
       res.send(resulty);
     }

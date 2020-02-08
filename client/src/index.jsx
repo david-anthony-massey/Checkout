@@ -41,12 +41,12 @@ class App extends React.Component {
     // let random = Math.floor(Math.random()*102)
       axios.get(`http://amazonproj-env.uee7t6cmb9.us-east-2.elasticbeanstalk.com/product/${this.state.productId}`)
     .then(response => {
-        console.log("Response on frontend at route '/product/${productId}'", response.data[0].price)
+        console.log("Response at route '/product/${productId}'", response.data[0].price)
       this.setState({ priceStr: response.data[0].price });
 
     }) 
     .catch(function(error) {
-      console.log(".catch response ERROR on frontend at route /product/${random}");
+      console.log("catch error /product/${random}", error);
     });
   }
 

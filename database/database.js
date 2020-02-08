@@ -16,14 +16,13 @@ connection.query("SELECT 1 + 1 AS solution", function(error, results, fields) {
 });
 //function that gets the product form the database
 const getProd = function(id, callback) {
-  console.log("HEY THIS IS IT",id)
+  console.log("current id:",id)
   connection.query(`select price from boxey where id = '${id}';`, (err, data) => {
     
     if (err) {
-      console.log('database  errorZZ',err);
+      console.log('database error',err);
     } else {
-      console.log("heyyyyyyyyy" ,data) 
-      
+      console.log("database response" ,data) 
       callback(null, data);
     }
   })
