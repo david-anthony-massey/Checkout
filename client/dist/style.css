@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+/* 
+#appTravis body {
+} */
 
-body {
+#appTravis {
   font-family:"Amazon Ember",Arial,sans-serif;
   border:1px solid;
   border-radius: 5px;
   border-color: rgb(197, 197, 197);
   margin-top:40px;
   padding:15px;
-}
-
-#appTravis {
   display: flex;
   flex-flow: column-reverse;
 }
