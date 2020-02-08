@@ -7,20 +7,20 @@ class App extends React.Component {
   constructor(props) {
     super(props);
       this.state = {
-        currentproduct: "",
+        quantity: 1,
         productIdentifier: data,
         productName: "",
         priceStr: "",
         ALLPRODUCTS: data,
         moreProducts: [],
         insertAllProds: [],
-        insertProd: "",
+        insertProd: data,
         productId:3,
       };
 
 
       this.getTransaction=this.getTransaction.bind(this);
-
+this.handlecurrentproduct = this.handlecurrentproduct.bind(this);
   }
   componentDidMount() {
 
@@ -50,7 +50,30 @@ class App extends React.Component {
     });
   }
 
+
+  // this.handlecurrentproduct = this.handlecurrentproduct.bind(this);
+handlecurrentproduct() {
+  let temp = 1
+  let upState = this.state.currentclick
+
+  let change = temp + upState
+  this.setState({
+    currentclick: change
+  });
+  console.log('This is current click in handlecurrentproduct', this.state.currentclick)
+  //let temp = this.state.emptyThang;
+  // temp.push(this.state.input);
+}
+
+handleClickOption(event){
+  console.log(event.target)
+  this.setState({quantity: event.target.innerHTML})
+}
 render() {
+  var arr = [];
+  for (var i=1; i <=16; i++){
+    arr.push( <option key = {i} value={i}>{i}</option>)
+  }
   return (
     <div>
         <div>
@@ -74,28 +97,23 @@ render() {
           </div>
             <br></br>
             <div className="stockyTravis">In Stock</div>
-            <label for="Qty">Qty:  </label>
-            <select id="Qty">
-              <option value="volSaskatchewanizonvo">1</option>
-              <option value="Saskatchewanizon2">2</option>
-              <option value="Saskatchewanizon3">3</option>
-              <option value="Saskatchewanizon4">4</option>
-              <option value="volSaskatchewanizo1nvo">5</option>
-              <option value="Saskatchewanizon21">6</option>
-              <option value="Saskatchewanizon31">7</option>
-              <option value="Saskatchewanizon41">8</option>
-              <option value="volSaskatchewanizo2nvo">9</option>
-              <option value="Saskatchewanizon22">10</option>
-              <option value="Saskatchewanizon32">11</option>
-              <option value="Saskatchewanizon42">12</option>
-              <option value="volSaskatchewanizonvo3">13</option>
-              <option value="Saskatchewanizon23">14</option>
-              <option value="Saskatchewanizon33">15</option>
-              <option value="Saskatchewanizon43">16</option>
+            <label htmlFor="Qty">Qty:  </label>
+            <select id="Qty" onChange={(event)=>this.setState({quantity: event.target.value})}
+            >
+             {arr}
             </select>
-              <div className="stupiddivTravis"><br></br><div className="checkoutbox">Add to Cart</div>
-              </div>
-                <div className="stupiddivTravis"><br></br><div className="buynowbox">Buy Now</div>
+            <br></br>
+            <br></br>
+                <button className="checkoutbox" onClick={() => {
+                    const events = new CustomEvent("cart", {
+                          detail: {
+                              count: this.state.quantity
+                          }
+                    });
+                    window.dispatchEvent(events);
+            }}
+            >Add to Cart</button>
+                <div className="stupiddivTravis"><br></br><button className="buynowbox">Buy Now</button>
                 </div>
               <div className="boatsnTravis">
                 <br></br>
@@ -103,11 +121,11 @@ render() {
                 <br></br>
                 <div className="boatsnTravis">  <label className="container">Yes, I want fast, FREE 
                 Delivery
-                <div>with Saskatchewanizon Prime</div> </label><input className="inputTravis" type="checkbox" checked="checked"></input>
+                <div>with Saskatchewanizon Prime</div> </label><input className="inputTravis" type="checkbox" ></input>
                 </div>
                   <br></br>
                   <br></br>
-                <div className="boatsnTravis" type="checkbox" checked="checked">Enjoy fast, FREE delivery, exclusive deals and 
+                <div className="boatsnTravis" type="checkbox" >Enjoy fast, FREE delivery, exclusive deals and 
                 <div>award-winning movies & TV shows with Prime </div>
                 <div>
                 Start saving today with Fast, FREE Delivery</div>
@@ -190,12 +208,8 @@ ReactDOM.render(<App />, document.getElementById("appTravis"));
 
 
 //stuff that was going to be used for handlers,
-// this.handlecurrentproduct = this.handlecurrentproduct.bind(this);
-// handlecurrentproduct(event) {
-//   this.setState({
-//     currentproduct: event.target.value
-//   });
-// }
+
+
 
 
 
@@ -288,3 +302,11 @@ ReactDOM.render(<App />, document.getElementById("appTravis"));
                           // qqqqqqqqqqqq wqqqqqqqQQQQQ
                           // WILL NEED SOMETHIN LIEK?.get("/product/:id"
                           // QQQQQQQQQQQQQQQQQQQ
+
+
+
+
+               
+            
+           
+        
