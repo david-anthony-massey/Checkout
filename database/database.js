@@ -1,6 +1,5 @@
 var mysql = require("mysql");
 
-
 var connection = mysql.createConnection({
   host: "database-1.ccoccmw69r5v.us-east-2.rds.amazonaws.com",
   user: "student",
@@ -8,35 +7,33 @@ var connection = mysql.createConnection({
   database: "checkbox"
 });
 
-
-
 connection.query("SELECT 1 + 1 AS solution", function(error, results, fields) {
   if (error) throw error;
   console.log("The solution is: ", results[0].solution);
 });
 //function that gets the product form the database
 const getProd = function(id, callback) {
-  console.log("current id:",id)
-  connection.query(`select price from boxey where id = '${id}';`, (err, data) => {
-    
-    if (err) {
-      console.log('database error',err);
-    } else {
-      console.log("database response" ,data) 
-      callback(null, data);
+  console.log("current id:", id);
+  connection.query(
+    `select price from boxey where id = '${id}';`,
+    (err, data) => {
+      if (err) {
+        console.log("database error", err);
+      } else {
+        console.log("database response", data);
+        callback(null, data);
+      }
     }
-  })
+  );
 };
 
 module.exports = {
   getProd
 };
 
-
-
 //ZZZZZZLeaving these down here as examples
-  // or referencesZZZZZZZZZ
-  //
+// or referencesZZZZZZZZZ
+//
 // getAllTransactions,
 // createTransactions,
 // const getAllTransactions = callback => {
@@ -55,7 +52,7 @@ module.exports = {
 //   connection.query(
 //     `INSERT INTO boxey (price, productName, imgUrls, category_id) VALUES ('${item.price}','${item.productName}','${item.imgUrls}','${item.category_id}');`,
 //     (err, data) => {
-  
+
 //       if (err) {
 //         callback(err, null);
 //       } else {

@@ -6,7 +6,7 @@ const cors = require("cors");
 const app = express();
 const PORT = 5137;
 
-app.use(cors()); // necessary for cross origin problems
+app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 // app.use(express.static('/client/src'));
@@ -18,7 +18,7 @@ app.get("/product/:id", (req, res) => {
   console.log("In server, this is the request: ", req.params.id);
   db.getProd(req.params.id, (err, resulty) => {
     if (err) {
-      res.status(500, err)
+      res.status(500, err);
     } else {
       res.send(resulty);
     }
@@ -28,19 +28,16 @@ app.listen(PORT, () => {
   console.log(`listening on port ${PORT}`);
 });
 
-
-
-
 //ZZZZZZLeaving these down here as examples
-  // or referencesZZZZZZZZZ
-  //
-  
+// or referencesZZZZZZZZZ
+//
+
 //newest CCCCC
 // app.get("/", (req, res) => {
 //   // console.log("In server, this is the request: ", req)
 //   db.getAllTransactions(req.body.data, (err, resulty) => {
 //     if (err) {
-//       console.log(err); 
+//       console.log(err);
 //     } else {
 //       res.send(resulty);
 //     }
@@ -55,7 +52,6 @@ app.listen(PORT, () => {
 // })
 // });
 
-
 // app.delete("/deleteTransaction/:id", (req, res) => {
 // //the ':/id' end point acts like a variable and allows the /deleteTransaction/:id route to be dynamic, id = 1,2,etc
 // console.log("delete at id", req.params);
@@ -64,65 +60,64 @@ app.listen(PORT, () => {
 //ZZZZZZZZZZZZZSomething like that for final?
 //     const { id } = req.params;
 //     db.getProd(req.params.id, (err, {id}) => {
-  //     if(err){
-    //       console.log("WILLISSSSSS",err); 
-    //     }else{
-      //     res.send({ id });
-      //     }
-      //   })
-      // })
-      //ENDZZZZZZZZZZZZZSomething like that for final?END
-      
-      // app.get("/allTransactions", (req, res) => {
-        //   // console.log("In server, this is the request: ", req)
-        //   db.getProd(req.body.productName, (err,data) => {
-          //     if (err) {
-            //       console.log(err); 
-            //     } else {
+//     if(err){
+//       console.log("WILLISSSSSS",err);
+//     }else{
+//     res.send({ id });
+//     }
+//   })
+// })
+//ENDZZZZZZZZZZZZZSomething like that for final?END
+
+// app.get("/allTransactions", (req, res) => {
+//   // console.log("In server, this is the request: ", req)
+//   db.getProd(req.body.productName, (err,data) => {
+//     if (err) {
+//       console.log(err);
+//     } else {
 //       res.send(data);
 //     }
 //   });
 // });
-  
-  //setup basic routes
-  // error first cb
-  // app.get("/postAllTransactions", (req, res) => {
-  //   console.log("This is the request in server for POSTXyz: ", req.body.data);
-  //   //req.body.data
-  //   let transactions = req.body.data;
-  //   for (var i = 0; i < transactions.length; i++) {
-  //     let transaction = transactions[i];
-  //     console.log("THIS IT THE LOOPING=",transaction);
-  //     db.createTransactions(transaction, err => {
-  //       if (err) {
-  //         console.log(err); 
-  //       }else{
-  //       res.send();
-  //     };
-  //   },req.body.data)
-  // }})
-  
-  
-  // app.get("/postAllTransactions", (req, res) => {
-  //   db.createTransactions(req.body, (err,result) => {
-  //     if (err) {console.log(err)
-  //     }else if(result){
-  //       console.log(result)};
-  //     res.send(result)
-  //     })
-  //   })
-  
-  //
-  // testing things for the google docs sheets page!
-  //
-  
-  // DUMMY DATA FOR ***
-  //      CATAGORY 4
-  // DUMMY DATA FOR ***
-  
-  // checking to see if copy/paste worked
-  
-  /*
+
+//setup basic routes
+// error first cb
+// app.get("/postAllTransactions", (req, res) => {
+//   console.log("This is the request in server for POSTXyz: ", req.body.data);
+//   //req.body.data
+//   let transactions = req.body.data;
+//   for (var i = 0; i < transactions.length; i++) {
+//     let transaction = transactions[i];
+//     console.log("THIS IT THE LOOPING=",transaction);
+//     db.createTransactions(transaction, err => {
+//       if (err) {
+//         console.log(err);
+//       }else{
+//       res.send();
+//     };
+//   },req.body.data)
+// }})
+
+// app.get("/postAllTransactions", (req, res) => {
+//   db.createTransactions(req.body, (err,result) => {
+//     if (err) {console.log(err)
+//     }else if(result){
+//       console.log(result)};
+//     res.send(result)
+//     })
+//   })
+
+//
+// testing things for the google docs sheets page!
+//
+
+// DUMMY DATA FOR ***
+//      CATAGORY 4
+// DUMMY DATA FOR ***
+
+// checking to see if copy/paste worked
+
+/*
   var x = [ {
     productId: 52,
     productName: 'Le Bon Shoppe Envie Sweater',
