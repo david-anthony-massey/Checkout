@@ -16,7 +16,7 @@ connection.query("SELECT 1 + 1 AS solution", function(error, results, fields) {
 const getProd = function(id, callback) {
   console.log("current id:", id);
   connection.query(
-    `select price from boxey where id = '${id}';`,
+    `select price from Products where id = '${id}';`,
     (err, data) => {
       if (err) {
         console.log("database error", err);
