@@ -1,10 +1,11 @@
 var mysql = require("mysql");
 
 var connection = mysql.createConnection({
-  host: "database-1.ccoccmw69r5v.us-east-2.rds.amazonaws.com",
-  user: "student",
-  password: "student1",
-  database: "checkbox"
+  host: "mybb.cfpgvexeasco.us-east-2.rds.amazonaws.com",
+  user: "reku68",
+  password: "password",
+  database: "canadaamazon",
+  port: 3306
 });
 
 connection.query("SELECT 1 + 1 AS solution", function(error, results, fields) {

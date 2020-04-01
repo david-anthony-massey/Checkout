@@ -39,7 +39,7 @@ class App extends React.Component {
     // let random = Math.floor(Math.random()*102)
     axios
       .get(
-        `http://amazonproj-env.uee7t6cmb9.us-east-2.elasticbeanstalk.com/product/${this.state.productId}`
+        `https://saskatchewanazon-checkout.herokuapp.com/product/${this.state.productId}`
       )
       .then(response => {
         console.log(
@@ -161,16 +161,16 @@ class App extends React.Component {
 ReactDOM.render(<App />, document.getElementById("appTravis"));
 
 //stuff for checkout button and the map function that mapped over instock 102 times,
-  /* <a href="{#cart.urls.continueShopping}" className="continue-shopping">Continue Shopping</a>
+/* <a href="{#cart.urls.continueShopping}" className="continue-shopping">Continue Shopping</a>
   <a href="{#cart.urls.checkout}" className="checkout-button">Checkout</a> 
   <table cellSpacing="50" className="shopping-cart">  
         <td colSpan="2"><input className="inputTravis" type="submit" name="submit" value="Update cart" /></td>
         <td className="quantity-span" colSpan="2">Total</td>
         </table> */
 
-  /* <button className="buttonTravis" onClick={this.sendTransaction}>Add Product</button> */
+/* <button className="buttonTravis" onClick={this.sendTransaction}>Add Product</button> */
 
-  /* {this.state.productIdentifier.map((place, index) => {
+/* {this.state.productIdentifier.map((place, index) => {
           return (      // state  productIdentifier: data,
             <ElementList
             key={index}
@@ -182,7 +182,7 @@ ReactDOM.render(<App />, document.getElementById("appTravis"));
           })} */
 
 //stuff for dropdown but conflicting with others compoennts, looks more like real amazon,
-  /* <ul className= "ulTravis">
+/* <ul className= "ulTravis">
         <li className="dropdown"><div className="stupiddivTravis"><a className="dropbtnx"> Qty: 1</a>
         </div>
 <div className="dropdown-content">
@@ -226,11 +226,10 @@ ReactDOM.render(<App />, document.getElementById("appTravis"));
 //stuff that was going to be used for handlers,
 
 // GOOD BYE RED LINE :(
-  /* <input className="inputTravis"
+/* <input className="inputTravis"
   value={this.state.currentproduct}
   onChange={this.handlecurrentproduct}
   ></input> */
-
 
 // attempt1
 // async componentDidMount() {
